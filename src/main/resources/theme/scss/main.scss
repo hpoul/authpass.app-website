@@ -1,0 +1,18 @@
+$primary: #e29b4a;
+$secondary: #97c965;
+
+$primary-light: #FBF3E5;
+
+//$fa-font-path: "../../vendor/fa/webfonts";
+//@import 'vendor/fa/fontawesome';
+//@import 'vendor/fa/solid';
+
+@import 'node_modules/bulma/sass/utilities/initial-variables';
+
+$custom-colors: ("primary-light": ($primary-light, $grey-dark));
+
+@import 'node_modules/bulma/bulma';
+@import 'node_modules/bulma-extensions/bulma-pricingtable/src/sass/index';
+@import 'node_modules/bulma-extensions/bulma-divider/src/sass/index';
+//@import 'node_modules/aos/src/sass/aos';
+

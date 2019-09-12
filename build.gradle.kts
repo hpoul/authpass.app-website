@@ -10,6 +10,12 @@ group = "app.anlage.site"
 version = "0.0.1-SNAPSHOT"
 
 
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.freeCompilerArgs = listOf("-Xjvm-default=enable")
+}
+
+
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin on the JVM.
     id("org.jetbrains.kotlin.jvm").version("1.3.20")
@@ -22,7 +28,7 @@ plugins {
 allprojects {
     repositories {
         jcenter()
-        //maven("https://jitpack.io")
+        maven("https://jitpack.io")
         maven("https://oss.sonatype.org/content/groups/public/")
     }
 }
@@ -52,6 +58,8 @@ dependencies {
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.3.1")
 //    implementation(project("dc2f"))
     //implementation("com.dc2f:dc2f:0.0.1-SNAPSHOT")
     //implementation("com.dc2f:dc2f:master-SNAPSHOT")
@@ -78,6 +86,6 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = "app.authpass.site.AppKt"
+    mainClassName = "app.authpass.website.WebsiteKt"
 }
 

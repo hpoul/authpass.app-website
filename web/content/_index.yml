@@ -1,0 +1,12 @@
+name: 'AuthPass.app'
+config:
+  url:
+    protocol: 'https'
+    host: 'authpass.app'
+  favicons:
+    - image: './favicon.ico'
+    - image: './favicon-32x32.png'
+    - image: './favicon-16x16.png'
+
+footerMenu: []
+mainMenu: []
