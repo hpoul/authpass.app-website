@@ -35,6 +35,7 @@ class WebsiteSetup : Dc2fSetup<AuthPassWebsite> {
 
 }
 
+
 fun main(argv: Array<String>) {
     Generator(Dc2fConfig(
         contentDirectory = "web/content",
