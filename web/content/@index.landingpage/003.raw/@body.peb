@@ -1,0 +1,52 @@
+<style>
+    .faq {
+        padding: 1rem 3rem 1.5rem 5rem;
+        position: relative;
+    }
+
+    .faq-figure {
+        position: absolute;
+        right: calc(100% + .75em);
+        /*right: calc(100%);*/
+        text-align: center;
+        top: 0;
+        min-width: 1.5em;
+    }
+
+    .faq h2 {
+        position: relative;
+        font-weight: bold;
+    }
+</style>
+
+{% macro faq(question, answer) %}
+<div class="faq">
+    <h2>
+        <figure class="faq-figure">
+            <i class="fas fa-question-circle has-text-primary is-size-2"></i>
+        </figure>
+        {{ question }}
+    </h2>
+    <div class="faq-answer">
+    {{ answer }}
+    </div>
+</div>
+{% endmacro %}
+
+<div class="section">
+    <div class="container">
+        <h2 class="title">Frequently asked questions</h2>
+        <div class="columns">
+            <div class="column">
+            {{ faq(question="Where can I download the app?", answer="Right now only available as source code ;) There will be an Android and Mac version soon. ") }}
+        {{ faq(
+            question="What's with Windows and Linux?",
+            answer="Since Flutter for Windows/Linux is still in an early stage without support for release versions. This can take a while. See also the Flutter GitHub issues for linux and windows.") }}
+            </div>
+            <div class="column">
+            {{ faq(question="When will it be ready?", answer="Not too long ;-) Subscribe to our mailing list or subscribe on GitHub") }}
+        {{ faq(question="What's with kdbx 4.x support?", answer="Right now there is no argon2 support for dart/flutter.") }}
+            </div>
+        </div>
+    </div>
+</div>

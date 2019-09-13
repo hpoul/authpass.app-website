@@ -1,5 +1,6 @@
 package app.authpass.website
 
+import com.dc2f.ContentDef
 import com.dc2f.common.*
 import com.dc2f.common.contentdef.BaseWebsite
 import com.dc2f.common.theme.baseTheme
@@ -14,12 +15,22 @@ class WebsiteTheme : Theme() {
 
 }
 
-class WebsiteSetup : Dc2fSetup<BaseWebsite> {
-    override val rootContent = BaseWebsite::class
+interface StoreUrls : ContentDef {
+    val ios: String
+    val android: String
+    val macos: String
+}
+
+abstract class AuthPassWebsite : BaseWebsite() {
+    abstract val storeUrls: StoreUrls
+}
+
+class WebsiteSetup : Dc2fSetup<AuthPassWebsite> {
+    override val rootContent = AuthPassWebsite::class
     override val theme: Theme
         get() = WebsiteTheme()
 
-    override fun urlConfig(rootConfig: BaseWebsite): UrlConfig =
+    override fun urlConfig(rootConfig: AuthPassWebsite): UrlConfig =
         rootConfig.config.url
 
 }

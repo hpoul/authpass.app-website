@@ -1,11 +1,12 @@
-$primary: #e29b4a;
+$primary: #626BC6;
 $secondary: #97c965;
 
 $primary-light: #FBF3E5;
 
-//$fa-font-path: "../../vendor/fa/webfonts";
-//@import 'vendor/fa/fontawesome';
-//@import 'vendor/fa/solid';
+$fa-font-path: "../../vendor/fa/webfonts";
+@import 'vendor/fa/fontawesome';
+@import 'vendor/fa/brands';
+@import 'vendor/fa/solid';
 
 @import 'node_modules/bulma/sass/utilities/initial-variables';
 
@@ -16,3 +17,40 @@ $custom-colors: ("primary-light": ($primary-light, $grey-dark));
 @import 'node_modules/bulma-extensions/bulma-divider/src/sass/index';
 //@import 'node_modules/aos/src/sass/aos';
 
+@import 'gh-fork-ribbon';
+
+.columns-reversed {
+  flex-direction: row-reverse;
+}
+
+
+
+.store-badges {
+  vertical-align: middle;
+  text-align: center;
+
+  a {
+    /* width: 135px; */
+    /* height: 40px; */
+    line-height: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  a.android img {
+    height: 60px;
+  }
+
+  a.macos img {
+    margin-left: 8px;
+    width: 156px;
+    height: 40px;
+  }
+}
+.screenshots-badges a.android {
+  margin-right: 32px;
+  margin-left: 40px;
+}
+
+.github-fork-ribbon.right-bottom:before {
+  background-color: #090;
+}

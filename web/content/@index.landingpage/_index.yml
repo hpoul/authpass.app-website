@@ -1,3 +1,6 @@
 seo:
-  title: 'AuthPassqqq - Password Manager'
-  description: 'TODO.'
+  title: 'AuthPass - Password Manager'
+  description: 'AuthPass - KeePass compatible Password Manager based on Flutter. For mobile and desktop.'
+embed:
+  references:
+    storeBadges: /partials/store-badges

@@ -1,5 +1,7 @@
-name: 'AuthPass.app'
+name: 'AuthPass.app Password Manager'
+navBarLogo: website-header.png
 config:
+  logo: website-header.png
   url:
     protocol: 'https'
     host: 'authpass.app'
@@ -8,5 +10,33 @@ config:
     - image: './favicon-32x32.png'
     - image: './favicon-16x16.png'
 
-footerMenu: []
+footerContent: /partials/footer
+storeUrls:
+  ios: 'https://apps.apple.com/app/authpass-password-manager/id1479297675?ls=1&at=11l8ru'
+  # https://developers.google.com/analytics/devguides/collection/android/v4/campaigns#google-play-url-builder
+  android: 'https://play.google.com/store/apps/details?id=design.codeux.authpass&referrer=utm_source%3Dwebsite'
+  macos: 'https://apps.apple.com/app/authpass-password-manager/id1478552452?ls=1&mt=12&at=11l8ru'
+
+footerMenu:
+  - name: 'Project'
+    children:
+      - name: 'Home'
+        ref: '/'
+      - name: 'GitHub'
+        url: https://github.com/authpass/authpass
+  - name: 'Legal'
+    children:
+      - name: 'Privacy Policy'
+        ref: '/legal/privacy-policy'
 mainMenu: []
+
+headInject: |
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91100035-8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-91100035-8');
+  </script>

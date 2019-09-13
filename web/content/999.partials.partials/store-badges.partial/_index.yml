@@ -1,0 +1,5 @@
+embed:
+  figures:
+    macAppStore:
+      image: download-mac-app-store.svg
+      inlineImage: true

@@ -1,0 +1,14 @@
+title: "AuthPass"
+bodyTextAlign: Left
+textInLeftColumn: true
+screenshot: authpass-platform-composition.png
+embed:
+  pebble:
+    # language=html
+    header: |
+      <strong>Hello World</strong>
+    githubLink: asdf
+    second: |
+      <a class="button" href="https://github.com/authpass/authpass">Download on GitHub</a>
+  references:
+    storeBadges: /partials/store-badges
