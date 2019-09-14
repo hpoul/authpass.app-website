@@ -15,4 +15,4 @@ if test -n "$@" ; then
     args="--args=\"$@\""
 fi
 
-./gradlew ${gradleArgs} run ${args}
+DC2F_ARG0="$0" ./gradlew ${gradleArgs} run ${args}
