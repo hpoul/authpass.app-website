@@ -34,3 +34,4 @@ local.properties
 /.blackbox/pubring.kbx~
 /.blackbox/secring.gpg
 /_tools/secrets/id_rsa.web.sphene.net
+/_tools/secrets/id_rsa.web.sphene.net.pub
