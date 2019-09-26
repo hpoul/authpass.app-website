@@ -17,6 +17,10 @@ storeUrls:
   android: 'https://play.google.com/store/apps/details?id=design.codeux.authpass&referrer=utm_source%3Dwebsite'
   macos: 'https://apps.apple.com/app/authpass-password-manager/id1478552452?ls=1&mt=12&at=11l8ru'
 
+embed:
+  references:
+    storeBadges: /partials/store-badges
+
 footerMenu:
   - name: 'Project'
     children:
@@ -28,7 +32,11 @@ footerMenu:
     children:
       - name: 'Privacy Policy'
         ref: '/legal/privacy-policy'
-mainMenu: []
+mainMenu:
+  - name: 'Home'
+    ref: '/'
+  - name: 'Blog'
+    ref: '/articles'
 
 headInject: |
   <!-- Global site tag (gtag.js) - Google Analytics -->
