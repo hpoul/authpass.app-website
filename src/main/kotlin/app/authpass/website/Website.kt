@@ -21,7 +21,7 @@ interface StoreUrls : ContentDef {
     val macos: String
 }
 
-abstract class AuthPassWebsite : BaseWebsite() {
+abstract class AuthPassWebsite : BaseWebsite {
     abstract val storeUrls: StoreUrls
 }
 
