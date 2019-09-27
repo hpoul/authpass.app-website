@@ -15,7 +15,7 @@ set -xeu
 
 dir="${0%/*}"
 repodir="${dir}/.."
-rsa="${repodir}/_tools/secrets/secrets/github-pages-deploy-key_id_rsa"
+rsa="_tools/secrets/github-pages-deploy-key_id_rsa"
 
 pushd "${repodir}"
 
@@ -38,7 +38,7 @@ rm -rf "${tmpdir}/*"
 # remove all remaining . files (.htaccess), but keep .git sub directory.
 #find "${tmpdir}" -type f -exec rm {} \;
 
-cp -a ${repodir}/public/. "${tmpdir}"
+cp -a public/. "${tmpdir}"
 
 pushd "${tmpdir}"
 
