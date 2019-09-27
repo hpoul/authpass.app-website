@@ -35,3 +35,4 @@ local.properties
 /.blackbox/secring.gpg
 /_tools/secrets/id_rsa.web.sphene.net
 /_tools/secrets/id_rsa.web.sphene.net.pub
+/_tools/secrets/_purgecache_secrets.sh
