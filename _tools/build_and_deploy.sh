@@ -7,7 +7,9 @@ basedir="$dir/.."
 
 cd $basedir
 
-./dc2f.sh build
+DC2F_ENV=production ./dc2f.sh build
 
 ./_tools/_deploy_web_sphene_net.sh
+
+./_tools/purge_cloudflare_cache.sh
 

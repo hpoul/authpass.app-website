@@ -16,7 +16,7 @@ fi
 chmod 600 $dir/secrets/id_rsa.web.sphene.net
 
 if ! test -d "$srcdir" ; then
-  echo "Directory not found
+  echo "Directory not found $srcdir"
   exit 1
 fi
 
