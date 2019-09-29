@@ -23,6 +23,17 @@ interface StoreUrls : ContentDef {
 
 abstract class AuthPassWebsite : BaseWebsite {
     abstract val storeUrls: StoreUrls
+
+    override fun createLinkedData(context: RenderContext<*>): Map<String, Any?>? =
+        requireNotNull(super.createLinkedData(context)) +
+            mapOf(
+                "aggregateRating" to mapOf(
+                    "@type" to "AggregateRating",
+                    "ratingValue" to "5",
+                    "bestRating" to "5",
+                    "reviewCount" to "1"
+                )
+            )
 }
 
 fun main(argv: Array<String>) {
