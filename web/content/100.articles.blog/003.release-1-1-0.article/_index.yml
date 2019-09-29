@@ -1,0 +1,17 @@
+seo:
+  title: 'Multiple Keepass files at once'
+  description: 'Keep your passwords organized in multiple password files. Assign color labels to each of them.'
+date: 2019-09-30
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: vaults.png
+title: 'Multiple Keepass files at once, AuthPass 1.1.0'
+mainImageOverride: 'multiple-password-files.png'
+embed:
+  figures:
+    multipleFiles:
+      title: 'Open multiple password files and label them with custom colors'
+      image: ./multiple-password-files.png
+    passwordGenerator:
+      title: 'Generate unique passwords for each website.'
+      image: ./password-generator-ui.png
