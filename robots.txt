@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://anlage.app/sitemap.xml
+Sitemap: https://authpass.app/sitemap.xml
