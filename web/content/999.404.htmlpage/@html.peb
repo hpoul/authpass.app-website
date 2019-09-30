@@ -1,0 +1,23 @@
+<div class="section container">
+    <div class="columns columns-reversed">
+        <div class="column is-5 has-text-centered">
+            <div class="content">
+            {{render(node.body)}}
+
+                <br />
+
+                <script>(function(){var e="ss-widget",t="script",a=document,r=window;var s,n,c;r.SS_WIDGET_TOKEN="tt-a52fce";r.SS_ACCOUNT="codeuxdesign.surveysparrow.com";r.SS_SURVEY_NAME="authpass-contact";if(!a.getElementById(e)){var S=function(){S.update(arguments)};S.args=[];S.update=function(e){S.args.push(e)};r.SparrowLauncher=S;s=a.getElementsByTagName(t);c=s[s.length-1];n=a.createElement(t);n.type="text/javascript";n.async=!0;n.id=e;n.src=["https://","codeuxdesign.surveysparrow.com/widget/",r.SS_WIDGET_TOKEN].join("");c.parentNode.insertBefore(n,c)}})();</script>
+            </div>
+        </div>
+        <div class="column is-7 content">
+            <figure>
+                <a data-flickr-embed="true"  href="https://www.flickr.com/photos/hpoul/albums/72157696499941172" title="Lighthouse Point Park, Ponce Inlet, Florida, United States"><img src="https://farm1.staticflickr.com/890/28503717998_fd63834d4e_z.jpg" width="100%" alt="Lighthouse Point Park, Ponce Inlet, Florida, United States"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                <figcaption>
+                    <h4>
+                        I thought I use this opportunity to show you a few of my favorite photos!
+                    </h4>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
