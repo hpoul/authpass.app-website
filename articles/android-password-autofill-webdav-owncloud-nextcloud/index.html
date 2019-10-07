@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Android Password Autofill, WebDav (OwnCloud, NextCloud) | AuthPass.app Password Manager</title>
+    <meta content="Android Password Autofill, WebDav (OwnCloud, NextCloud) | AuthPass.app Password Manager" property="og:title">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/css/main.7b0cf15f5145532f407750c9bb3770782639ef4cf66f5272613f82ad695789c1.css" integrity="sha256-ewzxX1FFUy9Ad1DJuzdweCY570z2b1JyYT+CrWlXicE=">
+    <script type="text/javascript" src="/script/main.js" async="async"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <meta name="description" content="Synchronize your passwords with WebDav, and use AuthPass as autofill service on android.">
+    <meta content="Synchronize your passwords with WebDav, and use AuthPass as autofill service on android." property="og:description">
+    <meta content="Synchronize your passwords with WebDav, and use AuthPass as autofill service on android." property="twitter:description">
+    <meta content="https://authpass.app/articles/android-password-autofill-webdav-owncloud-nextcloud/" property="og:url">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Android Password Autofill, WebDav (OwnCloud, NextCloud)","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/articles/android-password-autofill-webdav-owncloud-nextcloud/"},"image":"https://authpass.app/articles/android-password-autofill-webdav-owncloud-nextcloud/authpass-autofill-android.gif","wordcount":251,"url":"https://authpass.app/articles/android-password-autofill-webdav-owncloud-nextcloud/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Synchronize your passwords with WebDav, and use AuthPass as autofill service on android."}</script>
+    <meta content="https://authpass.app/articles/android-password-autofill-webdav-owncloud-nextcloud/authpass-autofill-android.gif" property="og:image">
+    <meta content="391" property="og:image:width">
+    <meta content="695" property="og:image:height">
+    <meta content="https://authpass.app/articles/android-password-autofill-webdav-owncloud-nextcloud/authpass-autofill-android.gif" property="twitter:image">
+    <meta content="article" property="og:type">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91100035-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91100035-8');
+</script>
+  </head>
+  <body class="has-navbar-fixed-top has-spaced-navbar-fixed-top">
+    <nav class="navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand"><a href="/" class="navbar-item"><img src="/website-header.png" alt="AuthPass.app Password Manager"></a><a class="navbar-burger" role="button" data-target="main-menu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a></div>
+        <div class="navbar-menu" id="main-menu">
+          <div class="navbar-end"><a href="/" class="navbar-item" title="Home">Home</a><a href="/articles/" class="navbar-item is-active" title="Blog">Blog</a></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="hero is-medium has-bg-img">
+        <div class="bg-image" style="background-image: url('/articles/android-password-autofill-webdav-owncloud-nextcloud/password-background.png')">x</div>
+        <div class="hero-body has-text-centered">
+          <h1 class="title">Android Password Autofill, WebDav (OwnCloud, NextCloud)</h1>
+          <h2 class="subtitle is-size-6 has-text-weight-bold">October 8, 2019</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section">
+          <div class="columns">
+            <div class="column is-offset-2 is-8">
+              <div class="content has-drop-caps"><p>Synchronize your files using WebDAV to your OwnCloud, NextCloud or similar self hosted
+cloud storages. On android use autofill service to automatically fill in usernames and passwords
+into third party apps!</p>
+<!--more-->
+<h2>Android Autofill</h2>
+<p>By enabling integration with the Android Autofill service it is now possible to use AuthPass
+as Autofill Provider in third party apps to easily fill in usernames and passwords.</p>
+<!DOCTYPE html>
+<figure><img src="/articles/android-password-autofill-webdav-owncloud-nextcloud/authpass-autofill-android.gif" alt="Autofill Service on Android">
+  <figcaption>
+    <h4>Autofill Service on Android</h4>
+  </figcaption>
+</figure>
+<p>To enable Autofill please head into the Preferences of AuthPass. It requires one time permissions.</p>
+<p><strong>Note</strong>: Autofill service is only supported on Android Oreo (9.0) and later!</p>
+<h2>Support for OwnCloud, NextCloud, etc.</h2>
+<p>If you don&rsquo;t like to use proprietary cloud storage services like Google Drive or Dropbox
+there is good news: AuthPass <strong>now supports WebDAV</strong> out of the box. This allows you
+to synchronize with OwnCloud, NextCloud or similar services.</p>
+<p>To use WeDAV, simply select it as cloud storage provider when opening the password vault.
+After that you have to enter the Base URL for your cloud storage provider, for example
+<code>https://nextcloud.example.com/remote.php/webdav</code>, your username and password.</p>
+<p>These credentials will be stored securely on the device (just like access tokens for
+google drive and Dropbox). Afterwards you can browse through your WebDAV service and select
+your existing Keepass file.</p>
+<!DOCTYPE html>
+<figure><img src="/articles/android-password-autofill-webdav-owncloud-nextcloud/Fit_400x400_save_into_webdav.png" width="400" height="354" alt="Save as... WebDAV">
+  <figcaption>
+    <h4>Save as... WebDAV</h4>
+  </figcaption>
+</figure>
+<p><strong>If you do not yet have an existing Keepass file</strong>, you can create a new password vault and
+head over to the preferences and select &lsquo;Save As&hellip; WebDAV&rsquo;</p>
+<h2>Get AuthPass 1.2.1</h2>
+<div class="store-badges">
+<a class="android" href='https://play.google.com/store/apps/details?id=design.codeux.authpass&amp;referrer=utm_source%3Dwebsite'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+<a href="https://apps.apple.com/app/authpass-password-manager/id1479297675?ls=1&amp;at=11l8ru" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2018-12-18&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
+<a class="macos" href="https://apps.apple.com/app/authpass-password-manager/id1478552452?ls=1&amp;mt=12&amp;at=11l8ru" target="_blank"><!DOCTYPE html>
+<img src="/partials/store-badges/download-mac-app-store.svg" alt=""></a>
+</div>
+<ul>
+<li><a href="https://f-droid.org/en/packages/design.codeux.authpass.fdroid/">Download on F-Droid</a></li>
+<li><a href="https://github.com/authpass/authpass/releases/tag/v1.2.1">Download Mac App from GitHub</a></li>
+<li><a href="https://github.com/authpass/authpass">Download Source Code from GitHub</a></li>
+</ul>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column"><span class="footer-title title is-4">Project</span>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/articles/">Blog &amp; News</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Social</span>
+            <ul>
+              <li><a href="https://facebook.com/AuthPass">Facebook</a></li>
+              <li><a href="https://twitter.com/AuthPass">Twitter</a></li>
+              <li><a href="https://github.com/authpass/authpass">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Legal</span>
+            <ul>
+              <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="github-fork-ribbon right-bottom fixed" href="https://github.com/authpass/authpass" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    </footer>
+  </body>
+</html>
