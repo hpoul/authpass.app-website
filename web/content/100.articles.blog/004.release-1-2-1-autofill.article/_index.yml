@@ -1,0 +1,22 @@
+seo:
+  title: 'Android Password Autofill, WebDav (OwnCloud, NextCloud)'
+  description: 'Synchronize your passwords with WebDav, and use AuthPass as autofill service on android.'
+date: 2019-10-08
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: password-background.png
+title: 'Android Password Autofill, WebDav (OwnCloud, NextCloud)'
+mainImageOverride: 'authpass-autofill-android.gif'
+embed:
+  figures:
+    autofillGif:
+      title: 'Autofill Service on Android'
+      image: ./authpass-autofill-android.gif
+    saveIntoWebDav:
+      title: 'Save as... WebDAV'
+      image: ./save_into_webdav.png
+      resize:
+        width: 400
+        height: 400
+        fillType: Fit
+
