@@ -9,7 +9,7 @@
 <div class="hero is-light coming-soon">
     <div class="hero-body">
         <div class="container">
-            <h2 class="title">Coming soon …</h2>
+            <h2 class="title">Native integrations</h2>
             <div class="columns has-text-centered">
                 <div class="column">
                     <h2><i class="fas fa-fingerprint is-size-1 has-text-primary"></i></h2>
@@ -19,13 +19,16 @@
                 </div>
                 <div class="column">
                     <h2><i class="fas fa-keyboard is-size-1 has-text-primary"></i></h2>
-                    <h3 class="has-text-weight-bold">PASSWORD AUTO-FILL FOR MOBILE</h3>
-                    <p>Hook into native APIs for seamless integration into Form-Fills.</p>
+                    <h3 class="has-text-weight-bold">PASSWORD AUTO-FILL FOR ANDROID</h3>
+                    <p>Hook into native APIs for seamless integration into Form-Fills. (Only available on Android right now)</p>
                 </div>
                 <div class="column">
                     <h2><i class="fas fa-cloud-upload-alt is-size-1 has-text-primary"></i></h2>
                     <h3 class="has-text-weight-bold">CLOUD SYNC</h3>
-                    <p>Easily keep your passwords synchronized between all your mobile and desktop devices.</p>
+                    <p>
+                        Easily keep your passwords synchronized between all your mobile and desktop devices.
+                        Using Google Drive, Dropbox or WebDAV (NextCloud, OwnCloud, etc.)
+                    </p>
                 </div>
             </div>
         </div>
