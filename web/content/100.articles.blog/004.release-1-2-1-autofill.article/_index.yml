@@ -6,7 +6,7 @@ categories: ['Product']
 author: 'Herbert Poul'
 teaser: password-background.png
 title: 'Android Password Autofill, WebDav (OwnCloud, NextCloud)'
-mainImageOverride: 'authpass-autofill-android.gif'
+mainImageOverride: 'authpass-autofill-android-screenshot.png'
 embed:
   figures:
     autofillGif:
