@@ -24,6 +24,10 @@ $custom-colors: ("primary-light": ($primary-light, $grey-dark));
 }
 
 
+.navbar-item img {
+  width: auto;
+}
+
 
 .store-badges {
   vertical-align: middle;

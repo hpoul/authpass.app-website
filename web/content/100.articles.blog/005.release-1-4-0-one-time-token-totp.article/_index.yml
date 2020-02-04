@@ -1,0 +1,22 @@
+seo:
+  title: 'Time based One Time Tokens for 2nd Factor (otpauth)'
+  description: 'Save your time based 2nd factor authentication in AuthPass.'
+date: 2020-02-04
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: time-based-authentication.jpg
+title: 'Time based One Time Tokens for 2nd Factor (otpauth)'
+mainImageOverride: './otp-totp-one-time-token-screenshot.jpeg'
+embed:
+  figures:
+    totpGif:
+      title: 'Autofill Service on Android'
+      image: ./authpass-onetime-token-totp.gif
+    totpScreenshot:
+      title: 'One Time Token display'
+      image: ./otp-totp-one-time-token-screenshot.jpeg
+      resize:
+        width: 400
+        height: 400
+        fillType: Fit
+

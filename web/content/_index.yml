@@ -1,5 +1,6 @@
 name: 'AuthPass.app Password Manager'
-navBarLogo: website-header.png
+navBar:
+  logo: website-header.png
 config:
   logo: website-header.png
   url:

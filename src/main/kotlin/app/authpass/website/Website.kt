@@ -1,16 +1,15 @@
 package app.authpass.website
 
 import com.dc2f.ContentDef
-import com.dc2f.common.*
+import com.dc2f.common.Generator
 import com.dc2f.common.contentdef.BaseWebsite
-import com.dc2f.common.theme.baseTheme
+import com.dc2f.common.theme.BaseTheme
 import com.dc2f.render.*
-import com.dc2f.util.*
-import kotlin.reflect.KClass
+import com.dc2f.util.Dc2fConfig
 
-class WebsiteTheme : Theme() {
+class WebsiteTheme : BaseTheme() {
     override fun configure(config: ThemeConfig) {
-        baseTheme()
+        super.configure(config)
     }
 
 }
@@ -43,7 +42,8 @@ fun main(argv: Array<String>) {
             staticDirectory = "web/static",
             rootContentType = AuthPassWebsite::class,
             theme = WebsiteTheme(),
-            urlConfigFromRootContent = { it.config.url }
+            urlConfigFromRootContent = { it.config.url },
+            assetBaseDirectory = "src/main/resources"
         )
     ).main(argv)
 //    Generator.generate(
