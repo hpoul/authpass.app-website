@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Time based One Time Tokens for 2nd Factor (otpauth) | AuthPass.app Password Manager</title>
+    <meta content="Time based One Time Tokens for 2nd Factor (otpauth) | AuthPass.app Password Manager" property="og:title">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://authpass.app/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/">
+    <link rel="stylesheet" href="/styles/css/main.fc44ada4a0b1138b76be9cff2dcfcf28174e38392f88fb0d36863d6fdeaeb659.css" integrity="sha256-/EStpKCxE4t2vpz/Lc/PKBdOODkviPsNNoY9b96utlk=">
+    <script type="text/javascript" src="/script/main.js" async="async"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <meta name="description" content="Save your time based 2nd factor authentication in AuthPass.">
+    <meta content="Save your time based 2nd factor authentication in AuthPass." property="og:description">
+    <meta content="Save your time based 2nd factor authentication in AuthPass." property="twitter:description">
+    <meta content="https://authpass.app/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/" property="og:url">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Time based One Time Tokens for 2nd Factor (otpauth)","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/"},"image":"https://authpass.app/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/otp-totp-one-time-token-screenshot.jpeg","wordcount":127,"url":"https://authpass.app/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Save your time based 2nd factor authentication in AuthPass."}</script>
+    <meta content="https://authpass.app/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/otp-totp-one-time-token-screenshot.jpeg" property="og:image">
+    <meta content="640" property="og:image:width">
+    <meta content="339" property="og:image:height">
+    <meta content="https://authpass.app/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/otp-totp-one-time-token-screenshot.jpeg" property="twitter:image">
+    <meta content="article" property="og:type">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91100035-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91100035-8');
+</script>
+  </head>
+  <body class="has-navbar-fixed-top has-spaced-navbar-fixed-top">
+    <nav class="main-navbar navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand"><a href="/" class="navbar-item"><picture><source srcset="/NoResize_2147483647x2147483647_webp_website-header.png.webp" type="image/webp"></source><img alt="AuthPass.app Password Manager" src="/NoResize_2147483647x2147483647_orig_website-header.png" width="711" height="108"></picture></a><a class="navbar-burger" role="button" data-target="main-menu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a></div>
+        <div class="navbar-menu" id="main-menu">
+          <div class="navbar-end"><a href="/" class="navbar-item" title="Home">Home</a><a href="/articles/" class="navbar-item is-active" title="Blog">Blog</a></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <div class="hero is-medium has-bg-img">
+          <div class="bg-image" style="background-image: url('/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/time-based-authentication.jpg')">x</div>
+          <div class="hero-body has-text-centered">
+            <h1 class="title">Time based One Time Tokens for 2nd Factor (otpauth)</h1>
+            <h2 class="subtitle is-size-6 has-text-weight-bold">4 February 2020</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section">
+            <div class="columns">
+              <div class="column is-offset-2 is-8">
+                <div class="content has-drop-caps"><p>Store your Time-based One Time Tokens (TOTP) used for second factor
+authentication directly in AuthPass.</p>
+<p>Works similar to Google Authenticator, but your secret is stored in your
+<code>kdbx</code> password keystore sharable across your devices.</p>
+<!--more-->
+<h2 id="time-based-one-time-tokens"><a href="#time-based-one-time-tokens" id="time-based-one-time-tokens" class="md-anchor">Time-based One Time Tokens</a></h2>
+<p>Just like with Google Authenticator, when presented with a QR Code for your
+2fa (2nd Factor Authentication) secret, simply scan it with the app by
+selecting <code>Add Field</code> -&gt; <code>One Time Token</code>.</p>
+
+  <figure><picture><img alt="Autofill Service on Android" src="/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/authpass-onetime-token-totp.gif" width="327" height="580"></picture>
+    <figcaption>
+      <h4>Autofill Service on Android</h4>
+    </figcaption>
+  </figure>
+<p>Afterwards the entry will have a field called <code>One Time Token</code> where you
+see the time remaining for the current code as well as the code itself you
+can use to authenticate with your service.</p>
+
+  <figure><picture><source srcset="/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/Fit_400x400_webp_otp-totp-one-time-token-screenshot.jpeg.webp" type="image/webp"></source><img alt="One Time Token display" src="/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/Fit_400x400_orig_otp-totp-one-time-token-screenshot.jpeg" width="400" height="212"></picture>
+    <figcaption>
+      <h4>One Time Token display</h4>
+    </figcaption>
+  </figure>
+<h2 id="get-authpass-140"><a href="#get-authpass-140" id="get-authpass-140" class="md-anchor">Get AuthPass 1.4.0</a></h2>
+<div class="store-badges">
+<a class="android" href='https://play.google.com/store/apps/details?id=design.codeux.authpass&amp;referrer=utm_source%3Dwebsite'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+<a href="https://apps.apple.com/app/authpass-password-manager/id1479297675?ls=1&amp;at=11l8ru" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2018-12-18&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
+<a class="macos" href="https://apps.apple.com/app/authpass-password-manager/id1478552452?ls=1&amp;mt=12&amp;at=11l8ru" target="_blank"><img src="/partials/store-badges/download-mac-app-store.svg"></a>
+</div>
+<ul>
+<li><a href="https://f-droid.org/en/packages/design.codeux.authpass.fdroid/">Download on F-Droid</a></li>
+<li><a href="https://github.com/authpass/authpass/releases/tag/v1.4.0">Download Mac App from GitHub</a></li>
+<li><a href="https://github.com/authpass/authpass">Download Source Code from GitHub</a></li>
+</ul>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column"><span class="footer-title title is-4">Project</span>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/articles/">Blog &amp; News</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Social</span>
+            <ul>
+              <li><a href="https://facebook.com/AuthPass">Facebook</a></li>
+              <li><a href="https://twitter.com/AuthPass">Twitter</a></li>
+              <li><a href="https://github.com/authpass/authpass">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Legal</span>
+            <ul>
+              <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="github-fork-ribbon right-bottom fixed" href="https://github.com/authpass/authpass" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    </footer>
+  </body>
+</html>

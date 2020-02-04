@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
     <loc>https://authpass.app/</loc>
-    <lastmod>2019-10-03T20:39:48Z</lastmod>
+    <lastmod>2020-02-04T14:13:27Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/articles/</loc>
@@ -25,8 +25,12 @@
     <lastmod>2019-10-07T22:15:30Z</lastmod>
   </url>
   <url>
+    <loc>https://authpass.app/articles/time-based-one-time-tokens-for-2nd-factor-otpauth/</loc>
+    <lastmod>2020-02-04T14:13:27Z</lastmod>
+  </url>
+  <url>
     <loc>https://authpass.app/legal/</loc>
-    <lastmod>2019-10-07T22:15:49.790Z</lastmod>
+    <lastmod>2020-02-04T14:14:07.239Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/legal/privacy-policy/</loc>
