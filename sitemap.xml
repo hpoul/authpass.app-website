@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
     <loc>https://authpass.app/</loc>
-    <lastmod>2020-04-19T13:01:09Z</lastmod>
+    <lastmod>2020-04-19T15:12:20Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/articles/</loc>
@@ -29,8 +29,24 @@
     <lastmod>2020-02-04T14:13:27Z</lastmod>
   </url>
   <url>
+    <loc>https://authpass.app/docs/</loc>
+    <lastmod>2020-04-19T15:12:45.641Z</lastmod>
+  </url>
+  <url>
+    <loc>https://authpass.app/docs/about-authpass-password-manager/</loc>
+    <lastmod>2020-04-19T15:12:20Z</lastmod>
+  </url>
+  <url>
+    <loc>https://authpass.app/docs/getting-started/</loc>
+    <lastmod>2020-04-19T15:12:20Z</lastmod>
+  </url>
+  <url>
+    <loc>https://authpass.app/docs/contact/</loc>
+    <lastmod>2020-04-19T15:12:20Z</lastmod>
+  </url>
+  <url>
     <loc>https://authpass.app/legal/</loc>
-    <lastmod>2020-04-19T13:17:18.205Z</lastmod>
+    <lastmod>2020-04-19T15:12:45.644Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/legal/privacy-policy/</loc>
