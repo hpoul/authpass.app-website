@@ -46,6 +46,8 @@ mainMenu:
     ref: '/'
   - name: 'Blog'
     ref: '/articles'
+  - name: 'Docs/Help'
+    ref: '/docs'
 
 headInject: |
   <!-- Global site tag (gtag.js) - Google Analytics -->
