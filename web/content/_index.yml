@@ -29,6 +29,8 @@ footerMenu:
         ref: '/'
       - name: 'Blog & News'
         ref: '/articles'
+      - name: 'Documentation & Help'
+        ref: '/docs'
   - name: 'Social'
     children:
       - name: 'Facebook'

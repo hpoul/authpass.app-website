@@ -1,0 +1,9 @@
+seo:
+  title: 'About AuthPass, kdbx and getting in touch'
+  description: 'Basics about the password manager, kdbx format and how to get involved and how to get help.'
+date: 2020-04-18
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: authpass-platform-composition.png
+title: 'About AuthPass - Password Manager'
+subTitle: 'Basics, What it is, What is Kdbx, Encryption, etc.'

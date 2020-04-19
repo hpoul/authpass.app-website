@@ -16,6 +16,7 @@ $custom-colors: ("primary-light": ($primary-light, $grey-dark));
 @import 'node_modules/bulma-extensions/bulma-pricingtable/src/sass/index';
 @import 'node_modules/bulma-extensions/bulma-divider/src/sass/index';
 //@import 'node_modules/aos/src/sass/aos';
+@import 'admonition';
 
 @import 'gh-fork-ribbon';
 
@@ -102,4 +103,16 @@ $custom-colors: ("primary-light": ($primary-light, $grey-dark));
   .title, .subtitle {
     color: #fefefe;
   }
+}
+
+.md-anchor {
+  color: inherit;
+}
+.adm-block {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.adm-body > * {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
