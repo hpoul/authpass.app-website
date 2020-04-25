@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Store your passwords in NextCloud | AuthPass.app Password Manager</title>
+    <meta content="Store your passwords in NextCloud | AuthPass.app Password Manager" property="og:title">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://authpass.app/docs/store-your-passwords-in-nextcloud/">
+    <link rel="stylesheet" href="/styles/css/main.e8165b475842bcf6af7455a0453186af67ff1e506d6b8aad41aef1789d314369.css" integrity="sha256-6BZbR1hCvPavdFWgRTGGr2f/HlBta4qtQa7xeJ0xQ2k=">
+    <script type="text/javascript" src="/script/main.js" async="async"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <meta name="description" content="Use WebDAV to store your keepass file in NextCloud or OwnCloud.">
+    <meta content="Use WebDAV to store your keepass file in NextCloud or OwnCloud." property="og:description">
+    <meta content="Use WebDAV to store your keepass file in NextCloud or OwnCloud." property="twitter:description">
+    <meta content="https://authpass.app/docs/store-your-passwords-in-nextcloud/" property="og:url">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Store your passwords in NextCloud","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/docs/store-your-passwords-in-nextcloud/"},"image":"https://authpass.app/docs/store-your-passwords-in-nextcloud/authpass-platform-composition.png","wordcount":561,"url":"https://authpass.app/docs/store-your-passwords-in-nextcloud/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Use WebDAV to store your keepass file in NextCloud or OwnCloud."}</script>
+    <meta content="https://authpass.app/docs/store-your-passwords-in-nextcloud/authpass-platform-composition.png" property="og:image">
+    <meta content="1353" property="og:image:width">
+    <meta content="840" property="og:image:height">
+    <meta content="https://authpass.app/docs/store-your-passwords-in-nextcloud/authpass-platform-composition.png" property="twitter:image">
+    <meta content="article" property="og:type">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91100035-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91100035-8');
+</script>
+  </head>
+  <body class="has-navbar-fixed-top has-spaced-navbar-fixed-top">
+    <nav class="main-navbar navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand"><a href="/" class="navbar-item"><picture><source srcset="/NoResize_2147483647x2147483647_webp_website-header.png.webp" type="image/webp"></source><img alt="AuthPass.app Password Manager" src="/NoResize_2147483647x2147483647_orig_website-header.png" width="711" height="108"></picture></a><a class="navbar-burger" role="button" data-target="main-menu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a></div>
+        <div class="navbar-menu" id="main-menu">
+          <div class="navbar-end"><a href="/" class="navbar-item" title="Home">Home</a><a href="/articles/" class="navbar-item" title="Blog">Blog</a><a href="/docs/" class="navbar-item is-active" title="Docs/Help">Docs/Help</a></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <div class="hero is-medium has-bg-img">
+          <div class="bg-image" style="background-image: url('/docs/store-your-passwords-in-nextcloud/authpass-platform-composition.png')">x</div>
+          <div class="hero-body has-text-centered">
+            <h1 class="title">Store your passwords in NextCloud</h1>
+            <h2 class="subtitle is-size-6 has-text-weight-bold">Use WebDAV to store your Keepass file in NextCloud or OwnCloud</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section">
+            <div class="columns">
+              <div class="column is-offset-2 is-8">
+                <div class="content has-drop-caps"><svg xmlns="http://www.w3.org/2000/svg" class="adm-hidden">
+<symbol id="adm-quote">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path fill="currentColor" d="m10.7 13.1c-.6.6-1.5 1.1-2.8 1.4-.3.1-.5 0-.9-.3-.3-.3-.5-.5-.5-.8 0-.1.1-.2.2-.2.3-.1.6-.4.8-1s.4-1.1.4-1.8c0-1.3-.5-2.2-1.5-2.6-.6-.2-.9-.7-.9-1.4 0-.2 0-.3.1-.4.1-.3.7-.7 1.6-1.2s1.6-.7 1.9-.6c.8.2 1.5.8 2.1 1.9.5 1.1.8 2.3.8 3.5 0 1.4-.4 2.6-1.3 3.5zm6.6 0c-.6.6-1.5 1.1-2.8 1.4-.3.1-.5 0-.9-.3-.3-.3-.5-.5-.5-.8 0-.1.1-.2.2-.2.3-.1.6-.4.8-1s.4-1.1.4-1.8c0-1.3-.5-2.2-1.5-2.6-.6-.3-.8-.7-.8-1.5 0-.2 0-.3.1-.4.1-.3.7-.7 1.6-1.2s1.6-.7 1.9-.6c.8.2 1.5.8 2.1 1.9s.9 2.2.9 3.4c-.2 1.6-.6 2.8-1.5 3.7z"/>
+</svg>
+</symbol>
+<symbol id="adm-success">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m3.3 14.3 1.4-2.8c.2-.4.7-.5 1-.2l4.7 4.9c.3.3.7.2 1-.1l7.1-10.2c.2-.3.7-.4 1 0l1.9 2.4c.2.2.2.6 0 .8l-9.7 10.9c-.2.2-.6.3-.8.1l-7.5-5.1c-.2-.1-.3-.5-.1-.7z" fill="currentColor"/>
+</svg>
+</symbol>
+<symbol id="adm-tip">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m12.3 10c2.8-.7 4.2-3.8 2.1-7.4 8.1 3.2 7.5 18.1-2.6 18.4-8.1.2-9.8-11.4-4.4-14.8.2 3.3 2.8 4.3 4.9 3.8zm-3.2 5.8c.2 1.6 2.5 1.9 3.6 1.5 2.8-1 2.5-4 2.1-5.1-.8 1.4-1.3 1.7-2.2 2s-3.7-.7-3.5 1.6z" fill="currentColor"/>
+</svg>
+</symbol>
+</svg>
+<p>If you are not comfortable reliant on a third party hosting provider
+like Google Drive or Dropbox you can use WebDAV to either host it on
+your own or use a local provider to sync your password file
+across all your devices.</p>
+<h1 id="nextcloud--owncloud-account"><a href="#nextcloud--owncloud-account" id="nextcloud--owncloud-account" class="md-anchor">NextCloud / OwnCloud account</a></h1>
+<p>If you do not yet have a <a href="https://nextcloud.com">NextCloud</a> server account,
+check out <a href="https://nextcloud.com/signup/">https://nextcloud.com/signup/</a> which provides an easy way
+to find a local provider for a free NextCloud service.</p>
+<h1 id="finding-your-webdav-url"><a href="#finding-your-webdav-url" id="finding-your-webdav-url" class="md-anchor">Finding your WebDAV URL</a></h1>
+<p>AuthPass uses WebDAV to communicate with your NextCloud instance.</p>
+<div class="adm-block adm-quote">
+<div class="adm-heading">
+<svg class="adm-icon"><use xlink:href="#adm-quote" /></svg><span>WebDAV</span>
+</div>
+<div class="adm-body">
+<p>Web Distributed Authoring and Versioning (WebDAV) is an open protocol
+which adds simple file management operations on top of HTTP.</p>
+<p><a href="https://en.wikipedia.org/wiki/WebDAV">Read more on Wikipedia&hellip;</a></p>
+</div>
+</div>
+<p>AuthPass requires the endpoint used in your NextCloud account. To find
+it log in to your NextCloud web UI and click &ldquo;Settings&rdquo; in the bottom left
+corner of your NextCloud UI. When opening on a mobile device it is under the
+Burger menu/Drawer:</p>
+
+  <figure><picture><img alt="WebDAV backend URL in NextCloud mobile" src="/docs/store-your-passwords-in-nextcloud/nextcloud-webdav-mobile.gif" width="315" height="648"></picture>
+    <figcaption>
+      <h4>WebDAV backend URL in NextCloud mobile</h4>
+    </figcaption>
+  </figure>
+<p>Select the full URL and copy it.</p>
+<h1 id="opening-a-file-from-webdav-in-authpass"><a href="#opening-a-file-from-webdav-in-authpass" id="opening-a-file-from-webdav-in-authpass" class="md-anchor">Opening a file from WebDAV in AuthPass</a></h1>
+<p>Launch AuthPass to get to the &ldquo;Load from WebDAV&rdquo; dialog and &ldquo;Login To WebDAV&rdquo;.
+Now you will see the following dialog:</p>
+
+  <figure><picture><source srcset="/docs/store-your-passwords-in-nextcloud/Fit_300x2147483647_webp_webdav-settings.png.webp" type="image/webp"></source><img alt="WebDAV settings form" src="/docs/store-your-passwords-in-nextcloud/Fit_300x2147483647_orig_webdav-settings.png" width="300" height="350"></picture>
+    <figcaption>
+      <h4>WebDAV settings form</h4>
+    </figcaption>
+  </figure>
+<p>And fill out the form as described:</p>
+<ul>
+<li>Url: The WebDAV URL copied in the previously. For example:<br />
+<code>https://nextcloud03.webo.hosting/remote.php/dav/files/</code></li>
+<li>Username: The username you use to login to your NextCloud.</li>
+<li>Password: Your password for this user.</li>
+</ul>
+<p>Press <strong>Ok</strong> to continue and login to your WebDAV account.</p>
+<h1 id="select-your-kdbx-file"><a href="#select-your-kdbx-file" id="select-your-kdbx-file" class="md-anchor">Select your kdbx file.</a></h1>
+<p>If your login works correctly you will see a list of all folder and files in
+your root directory.</p>
+
+  <figure><picture><source srcset="/docs/store-your-passwords-in-nextcloud/Fit_200x2147483647_webp_nextcloud-webdav-browser.png.webp" type="image/webp"></source><img alt="WebDAV root folder of a NextCloud account" src="/docs/store-your-passwords-in-nextcloud/Fit_200x2147483647_orig_nextcloud-webdav-browser.png" width="200" height="356"></picture>
+    <figcaption>
+      <h4>WebDAV root folder of a NextCloud account</h4>
+    </figcaption>
+  </figure>
+<p>Now you can navigate by tapping on your sub folders to locate your <code>kdbx</code> file.</p>
+<h1 id="creating-a-new-password-database-file"><a href="#creating-a-new-password-database-file" id="creating-a-new-password-database-file" class="md-anchor">Creating a new password database file.</a></h1>
+<p>If you do not yet have a kdbx file stored in your NextCloud drive
+you can start from scratch.</p>
+<p>On the initial screen of AuthPass select <strong>&ldquo;New to Keepass? Create a new Password Database&rdquo;</strong>.
+Now you will be prompted to enter a database name and your Master Password.</p>
+<div class="adm-block adm-tip">
+<div class="adm-heading">
+<svg class="adm-icon"><use xlink:href="#adm-tip" /></svg><span>Important</span>
+</div>
+<div class="adm-body">
+<p>Make sure to create a memorable, but secure Master Password. Maybe choose
+a password phrase with multiple words which is still easy to remember.</p>
+</div>
+</div>
+<p>After creating your new file you will see your fresh, empty, password list.
+From here you can manage your passwords, create new ones, etc.</p>
+<p>To store your passwords in your NextCloud open the AppBar menu and tap on
+the newly created password file.</p>
+
+  <figure><picture><source srcset="/docs/store-your-passwords-in-nextcloud/Fit_200x2147483647_webp_kdbx-password-file.png.webp" type="image/webp"></source><img alt="Select your password database from the AppBar context menu." src="/docs/store-your-passwords-in-nextcloud/Fit_200x2147483647_orig_kdbx-password-file.png" width="200" height="400"></picture>
+    <figcaption>
+      <h4>Select your password database from the AppBar context menu.</h4>
+    </figcaption>
+  </figure>
+<p>This will open the settings for your password database. To change how
+your password file is stored select the overflow menu from the &ldquo;Path&rdquo; row.</p>
+<p>It will show you different storage backends you can use to save your password database to.</p>
+
+  <figure><picture><source srcset="/docs/store-your-passwords-in-nextcloud/Fit_200x2147483647_webp_kdbx-storage-backends.png.webp" type="image/webp"></source><img alt="Save your password database into WebDav/NextCloud/OwnCloud" src="/docs/store-your-passwords-in-nextcloud/Fit_200x2147483647_orig_kdbx-storage-backends.png" width="200" height="400"></picture>
+    <figcaption>
+      <h4>Save your password database into WebDav/NextCloud/OwnCloud</h4>
+    </figcaption>
+  </figure>
+<p>You can now select to store your passwords into NextCloud by choosing &ldquo;WebDAV&rdquo;.
+If you have not yet configured your WebDAV storage you will get a settings
+dialog where you have to enter WebDAV URL and username and password.
+See the beginning of this page on how to find your WebDAV url and configure
+everything.</p>
+<p>After successfully logging in you can choose a new location for your kdbx file.
+Once you have confirmed the location AuthPass will copy your password database
+into the specified location and reopen it.</p>
+<div class="adm-block adm-success">
+<div class="adm-heading">
+<svg class="adm-icon"><use xlink:href="#adm-success" /></svg><span>Success</span>
+</div>
+<div class="adm-body">
+<p>Congratulations, you have successfully saved your kdbx database files into
+your own NextCloud instance.</p>
+</div>
+</div>
+<p>If you have any problems during this process, don&rsquo;t hesitate to <a href="/docs/contact/">contact us</a>!</p>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column"><span class="footer-title title is-4">Project</span>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/articles/">Blog &amp; News</a></li>
+              <li><a href="/docs/">Documentation &amp; Help</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Social</span>
+            <ul>
+              <li><a href="https://facebook.com/AuthPass">Facebook</a></li>
+              <li><a href="https://twitter.com/AuthPass">Twitter</a></li>
+              <li><a href="https://github.com/authpass/authpass">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Legal</span>
+            <ul>
+              <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="github-fork-ribbon right-bottom fixed" href="https://github.com/authpass/authpass" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    </footer>
+  </body>
+</html>
