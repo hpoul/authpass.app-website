@@ -1,0 +1,41 @@
+seo:
+  title: 'Store your passwords in NextCloud'
+  description: 'Use WebDAV to store your keepass file in NextCloud or OwnCloud.'
+date: 2020-04-25
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: authpass-platform-composition.png
+title: 'Store your passwords in NextCloud'
+subTitle: 'Use WebDAV to store your Keepass file in NextCloud or OwnCloud'
+embed:
+  figures:
+    webdav:
+      title: 'WebDAV backend URL in NextCloud'
+      image: ./nextcloud-webdav-url.gif
+    webdavMobile:
+      title: 'WebDAV backend URL in NextCloud mobile'
+      image: ./nextcloud-webdav-mobile.gif
+    webdavSettings:
+      title: 'WebDAV settings form'
+      image: ./webdav-settings.png
+      resize:
+        width: 300
+        fillType: Fit
+    webdavBrowser:
+      title: 'WebDAV root folder of a NextCloud account'
+      image: ./nextcloud-webdav-browser.png
+      resize:
+        width: 200
+        fillType: Fit
+    appbarMenu:
+      title: 'Select your password database from the AppBar context menu.'
+      image: ./kdbx-password-file.png
+      resize:
+        width: 200
+        fillType: Fit
+    kdbxStorage:
+      title: 'Save your password database into WebDav/NextCloud/OwnCloud'
+      image: ./kdbx-storage-backends.png
+      resize:
+        width: 200
+        fillType: Fit

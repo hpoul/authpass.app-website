@@ -6,8 +6,9 @@ Getting started managing your passwords with AuthPass.
 
 !!! info "Documentation"
     * [About & Getting in touch](../about-authpass)
-    * [Getting Started](../getting-started)
-      Installation on your device, difference between each version.
+    * [Getting Started](../getting-started)\
+        Installation on your device, difference between each version.
+    * [Password database in NextCloud with WebDAV](../store-passwords-nextcloud)
 
 {{render content=rootNode.embed.references.storeBadges /}}
 
