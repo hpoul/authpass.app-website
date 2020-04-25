@@ -1,11 +1,12 @@
 seo:
-  title: 'Store your passwords in NextCloud'
-  description: 'Use WebDAV to store your keepass file in NextCloud or OwnCloud.'
+  title: 'Store your passwords in NextCloud using WebDAV'
+  description: 'Use WebDAV to store your keepass file in NextCloud or OwnCloud using WebDAV storage backend.'
 date: 2020-04-25
 categories: ['Product']
 author: 'Herbert Poul'
 teaser: authpass-platform-composition.png
-title: 'Store your passwords in NextCloud'
+title: 'Store your Keepass password file in NextCloud'
+slug: store-keepass-passwords-nextcloud-webdav
 subTitle: 'Use WebDAV to store your Keepass file in NextCloud or OwnCloud'
 embed:
   figures:

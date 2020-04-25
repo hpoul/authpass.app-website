@@ -9,7 +9,7 @@ cd $dir/..
 
 source _tools/secrets/_purgecache_secrets.sh
 
-data=$(cat public/allsites.json | jq '{files: [.pages[].url]}')
+data=$(cat public/allsites.json | jq '{files: [.pages[].url, "https://authpass.app/sitemap.xml"]}')
 
 
 # we don't want secrets to be echo'd
