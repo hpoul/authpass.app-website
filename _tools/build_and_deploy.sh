@@ -2,6 +2,8 @@
 
 set -xeu
 
+export DRY_RUN=${DRY_RUN:-}
+
 dir="${0%/*}"
 basedir="$dir/.."
 
