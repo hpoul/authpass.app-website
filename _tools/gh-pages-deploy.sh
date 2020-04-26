@@ -43,9 +43,14 @@ cp -a public/. "${tmpdir}"
 pushd "${tmpdir}"
 
 git status
-git add .
-git commit --author="Travis <ci@travis>" -m "new publish from travis ci ${BUILD_NUMBER} ${BUILD_WEB_URL}"
-GIT_SSH_COMMAND="ssh -v -i $rsa" git push
+
+if test -z "$DRY_RUN" ; then
+	git add .
+	git commit --author="Travis <ci@travis>" -m "new publish from travis ci ${BUILD_NUMBER} ${BUILD_WEB_URL}"
+	GIT_SSH_COMMAND="ssh -v -i $rsa" git push
+else
+	echo "DRY RUN, not doing anything. feel free to check `pwd` for  changes."
+fi
 
 popd
 
