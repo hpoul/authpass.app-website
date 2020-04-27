@@ -107,6 +107,11 @@ $custom-colors: ("primary-light": ($primary-light, $grey-dark));
 
 .md-anchor {
   color: inherit;
+  scroll-margin-top: 100px;
+  cursor: default;
+}
+*[id] {
+  scroll-margin-top: 100px;
 }
 .adm-block {
   margin-top: 1em;

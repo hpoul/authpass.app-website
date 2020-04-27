@@ -1,0 +1,17 @@
+seo:
+  title: 'Support AuthPass & Get Involved'
+  description: 'Do you like AuthPass? There are many ways you can help us.'
+date: 2020-04-18
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: authpass-platform-composition.png
+title: 'Support AuthPass & Get Involved'
+subTitle: 'Do you like AuthPass? There are many ways you can help us.'
+embed:
+  figures:
+    sponsorButton:
+      title: 'GitHub Sponsor Button'
+      image: ./github-sponsor-button.png
+      resize:
+        width: 600
+        fillType: Fit
