@@ -13,10 +13,10 @@ config:
 
 footerContent: /partials/footer
 storeUrls:
-  ios: 'https://apps.apple.com/app/authpass-password-manager/id1479297675?ls=1&at=11l8ru'
+  ios: 'https://apps.apple.com/app/authpass-password-manager/id1479297675?ls=1&ct=website&at=11l8ru'
   # https://developers.google.com/analytics/devguides/collection/android/v4/campaigns#google-play-url-builder
   android: 'https://play.google.com/store/apps/details?id=design.codeux.authpass&referrer=utm_source%3Dwebsite'
-  macos: 'https://apps.apple.com/app/authpass-password-manager/id1478552452?ls=1&mt=12&at=11l8ru'
+  macos: 'https://apps.apple.com/app/authpass-password-manager/id1478552452?ls=1&mt=12&ct=website&at=11l8ru'
 
 embed:
   references:
