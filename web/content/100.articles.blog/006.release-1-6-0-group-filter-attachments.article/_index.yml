@@ -1,0 +1,14 @@
+seo:
+  title: 'AuthPass 1.6: Filter by Groups, Support file attachments'
+  description: 'Attach files to password entries and filter password list by groups.'
+date: 2020-05-13
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: header_organized.jpg
+title: 'Filter by Groups 🔍️ － File attachments for passwords 🗃️ － AuthPass 1.6'
+mainImageOverride: './group-filter.png'
+embed:
+  figures:
+    filterGroups:
+      title: 'Filter groups'
+      image: ./authpass-1-6-0-filter-groups.gif
