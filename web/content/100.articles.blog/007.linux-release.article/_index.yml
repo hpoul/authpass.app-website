@@ -1,0 +1,14 @@
+seo:
+  title: 'First Linux Desktop Release'
+  description: 'AuthPass can now run natively on linux desktops.'
+date: 2020-06-10
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: linux-1962898.jpg
+title: 'Linux Desktop Release: AuthPass 1.6.3'
+mainImageOverride: './authpass-on-ubuntu-linux.png'
+embed:
+  figures:
+    ubuntuScreenshot:
+      title: 'AuthPass running in Ubuntu Linux'
+      image: ./authpass-on-ubuntu-linux.png
