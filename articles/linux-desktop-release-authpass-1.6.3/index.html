@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>First Linux Desktop Release | AuthPass.app Password Manager</title>
+    <meta content="First Linux Desktop Release | AuthPass.app Password Manager" property="og:title">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/">
+    <link rel="stylesheet" href="/styles/css/main.d7fb6c3895cfc4ebcebd905c4107a94a4197f823bf508e4b12d860eebb004806.css" integrity="sha256-1/tsOJXPxOvOvZBcQQepSkGX+CO/UI5LEthg7rsASAY=">
+    <script type="text/javascript" src="/script/main.3d1df54f8d65ad0229956d791eda963f1de698024e93271eb1f879f88c855ac7.js" async="async" integrity="sha256-PR31T41lrQIplW15HtqWPx3mmAJOkycesfh5+IyFWsc="></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <meta name="description" content="AuthPass can now run natively on linux desktops.">
+    <meta content="AuthPass can now run natively on linux desktops." property="og:description">
+    <meta content="AuthPass can now run natively on linux desktops." property="twitter:description">
+    <meta content="https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/" property="og:url">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"First Linux Desktop Release","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/"},"image":"https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/authpass-on-ubuntu-linux.png","wordcount":241,"url":"https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"AuthPass can now run natively on linux desktops."}</script>
+    <meta content="https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/authpass-on-ubuntu-linux.png" property="og:image">
+    <meta content="1956" property="og:image:width">
+    <meta content="1544" property="og:image:height">
+    <meta content="https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/authpass-on-ubuntu-linux.png" property="twitter:image">
+    <meta content="article" property="og:type">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91100035-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91100035-8');
+</script>
+  </head>
+  <body class="has-navbar-fixed-top has-spaced-navbar-fixed-top">
+    <nav class="main-navbar navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand"><a href="/" class="navbar-item"><picture><source srcset="/NoResize_2147483647x2147483647_webp_website-header.png.webp" type="image/webp"></source><img alt="AuthPass.app Password Manager" src="/NoResize_2147483647x2147483647_orig_website-header.png" width="711" height="108"></picture></a><a class="navbar-burger" role="button" data-target="main-menu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a></div>
+        <div class="navbar-menu" id="main-menu">
+          <div class="navbar-end"><a href="/" class="navbar-item" title="Home">Home</a><a href="/articles/" class="navbar-item is-active" title="Blog">Blog</a><a href="/docs/" class="navbar-item" title="Docs/Help">Docs/Help</a></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <div class="hero is-medium has-bg-img">
+          <div class="bg-image" style="background-image: url('/articles/linux-desktop-release-authpass-1.6.3/linux-1962898.jpg')">x</div>
+          <div class="hero-body has-text-centered">
+            <h1 class="title">Linux Desktop Release: AuthPass 1.6.3</h1>
+            <h2 class="subtitle is-size-6 has-text-weight-bold">10 June 2020</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section">
+            <div class="columns">
+              <div class="column is-offset-2 is-8">
+                <div class="content has-drop-caps"><svg xmlns="http://www.w3.org/2000/svg" class="adm-hidden">
+<symbol id="adm-note">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<g fill="currentColor">
+<path d="m15.4 5h4.5v2.7h-4.5z" transform="matrix(-.7071 -.7071 .7071 -.7071 25.7188 23.288)"/>
+<path d="m13.9 7 3.1 3.1-9.5 9.6-3.5.3.3-3.5z"/>
+</g>
+</svg>
+</symbol>
+<symbol id="adm-warning">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m3.1 18.5 8.1-14c.4-.7 1.4-.7 1.8 0l8.1 14c.4.7-.1 1.6-.9 1.6h-16.1c-.9 0-1.4-.9-1-1.6zm10.6-4.3c0-.1 0-.2 0-.2v-4.6c0-.4 0-.6 0-.6-.1-.1-.3-.2-.7-.3s-.7-.1-1-.1c-.1 0-.2 0-.3 0-.3.1-.5.2-.5.4v4.2s-.1.1-.2.4-.1.4 0 .5c.3.2.7.4 1.2.6s.9.3 1.2.3h.2c.2 0 .3-.2.3-.5-.2 0-.2-.1-.2-.1zm-.8 1.4c-.5-.2-.9-.2-1.2-.2s-.4.1-.5.4v.9c0 .2 0 .3-.1.4-.1.2-.2.3-.1.4s.5.3 1.2.5c.6.2 1 .2 1.1.2.2 0 .4-.1.4-.3s.1-.4.1-.7c0-.1 0-.3.1-.7 0-.3 0-.5 0-.5-.2-.1-.5-.2-1-.4z" fill="currentColor"/>
+</svg>
+</symbol>
+</svg>
+<p>AuthPass can finally run natively on Linux Desktops. This
+brings all Password Manager features from our Android, iOS and
+MacOS app finally to Linux 🎉️ 🐧️</p>
+<!--more-->
+<h2 id="installation"><a href="#installation" class="md-anchor">Installation</a></h2>
+
+  <figure><picture><source srcset="/articles/linux-desktop-release-authpass-1.6.3/NoResize_2147483647x2147483647_webp_authpass-on-ubuntu-linux.png.webp" type="image/webp"></source><img alt="AuthPass running in Ubuntu Linux" src="/articles/linux-desktop-release-authpass-1.6.3/NoResize_2147483647x2147483647_orig_authpass-on-ubuntu-linux.png" width="1956" height="1544"></picture>
+    <figcaption>
+      <h4>AuthPass running in Ubuntu Linux</h4>
+    </figcaption>
+  </figure>
+<p>There are basically two ways to install right now. Either
+manually downloading the .tar.gz or, if you are using Ubuntu
+you can <a href="https://launchpad.net/~codeux.design/+archive/ubuntu/authpass">install our PPA using Deb</a>.</p>
+<div class="adm-block adm-warning">
+<div class="adm-heading">
+<svg class="adm-icon"><use xlink:href="#adm-warning" /></svg><span>Experimental</span>
+</div>
+<div class="adm-body">
+<p>AuthPass for Linux is still a bit experimental. If you try it out,
+please provide feedback. If you find bugs, file a new
+<a href="https://github.com/authpass/authpass/issues">bug report</a>.</p>
+<p>Make sure to <strong>create backups for your password database</strong>!</p>
+<p>Otherwise drop as a line on <a href="https://twitter.com/authpass">Twitter</a> or
+<a href="https://facebook.com/authpass">Facebook</a> to let us know that
+everything is working.
+🤣️</p>
+</div>
+</div>
+<h3 id="requirements"><a href="#requirements" class="md-anchor">Requirements</a></h3>
+<ul>
+<li>Only available for amd64 (ie. 64 bit Linux).</li>
+<li>Requires X11, GTK, etc.</li>
+</ul>
+<h3 id="ubuntu"><a href="#ubuntu" class="md-anchor">Ubuntu</a></h3>
+<p>You can simply use the released PPA from:
+<a href="https://launchpad.net/~codeux.design/+archive/ubuntu/authpass">https://launchpad.net/~codeux.design/+archive/ubuntu/authpass</a></p>
+<p>Simply use the following commands:</p>
+<pre><code class="language-shell">sudo add-apt-repository ppa:codeux.design/authpass
+sudo apt-get update
+sudo apt-get install authpass
+</code></pre>
+<p>This will install a <code>AuthPass</code> entry as desktop menu entry as well as a
+<code>authpass</code> command in <code>/usr/bin/authpass</code></p>
+<h3 id="other-linux-distributions"><a href="#other-linux-distributions" class="md-anchor">Other Linux Distributions</a></h3>
+<p>Just head to the <a href="https://github.com/authpass/authpass/releases">Releases on GitHub</a>
+and download the Linux .tar.gz file.</p>
+<p>Right now this is the 1.6.3 release: <a href="https://github.com/authpass/authpass/releases/tag/v1.6.3">https://github.com/authpass/authpass/releases/tag/v1.6.3</a></p>
+<ul>
+<li>Download <code>authpass-linux-1.6.3_1201.tar.gz</code></li>
+<li>Extract .tar.gz:
+<pre><code>&gt; tar xzf authpass-linux-1.6.3_1201.tar.gz
+</code></pre>
+</li>
+<li>Launch authpass/authpass:
+<pre><code>authpass/authpass
+</code></pre>
+</li>
+</ul>
+<div class="adm-block adm-note">
+<div class="adm-heading">
+<svg class="adm-icon"><use xlink:href="#adm-note" /></svg><span>Let us know what you think!</span>
+</div>
+<div class="adm-body">
+<p>If you try out AuthPass for Linux, let us know what you think!</p>
+<p>Drop as a line on <a href="https://twitter.com/authpass">Twitter</a> or
+<a href="https://facebook.com/authpass">Facebook</a> to let us know that
+everything is working 🤣️, maybe also which Linux
+version/distribution.</p>
+</div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section">
+            <div class="columns">
+              <div class="column is-offset-2 is-8 is-centered"><script>
+    window.sparrowConfig = {
+        triggerOnLoad: false
+    };
+    function sparrowOnLoad() {
+        window.SparrowLauncher('popup', {
+            variables: {
+                'page': "\/articles\/linux-desktop-release-authpass-1.6.3\/",
+                'domain': window.location.host
+            }
+        });
+    }
+</script>
+<script>(function(){var e="ss-widget",t="script",a=document,r=window;var s,n,c;r.SS_WIDGET_TOKEN="tt-cfae4c";r.SS_ACCOUNT="codeuxdesign.surveysparrow.com";r.SS_SURVEY_NAME="authpass-helpful";if(!a.getElementById(e)){var S=function(){S.update(arguments)};S.args=[];S.update=function(e){S.args.push(e)};r.SparrowLauncher=S;s=a.getElementsByTagName(t);c=s[s.length-1];n=a.createElement(t);n.type="text/javascript";n.async=!0;n.id=e;n.src=["https://","codeuxdesign.surveysparrow.com/widget/",r.SS_WIDGET_TOKEN].join("");n.onload=sparrowOnLoad;c.parentNode.insertBefore(n,c)}})();</script></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column"><span class="footer-title title is-4">Project</span>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/articles/">Blog &amp; News</a></li>
+              <li><a href="/docs/">Documentation &amp; Help</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Social</span>
+            <ul>
+              <li><a href="https://facebook.com/AuthPass">Facebook</a></li>
+              <li><a href="https://twitter.com/AuthPass">Twitter</a></li>
+              <li><a href="https://github.com/authpass/authpass">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Legal</span>
+            <ul>
+              <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="github-fork-ribbon right-bottom fixed" href="https://github.com/authpass/authpass" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    </footer>
+  </body>
+</html>

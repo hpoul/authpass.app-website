@@ -12,6 +12,7 @@
         <rdf:li />
         <rdf:li />
         <rdf:li />
+        <rdf:li />
       </rdf:Seq>
     </items>
   </channel>
@@ -44,6 +45,11 @@
     <title>Filter by Groups &#x1f50d;️ － File attachments for passwords &#x1f5c3;️ － AuthPass 1.6</title>
     <link>https://authpass.app/articles/filter-by-groups-file-attachments-for-passwords-authpass-1.6/</link>
     <dc:date>2020-05-13T08:00:00Z</dc:date>
+  </item>
+  <item rdf:about="https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/">
+    <title>Linux Desktop Release: AuthPass 1.6.3</title>
+    <link>https://authpass.app/articles/linux-desktop-release-authpass-1.6.3/</link>
+    <dc:date>2020-06-10T08:00:00Z</dc:date>
   </item>
 </rdf:RDF>
 
