@@ -1,4 +1,6 @@
 embed:
+  references:
+    linuxRelease: /articles/linux-release/
   figures:
     macAppStore:
       image: download-mac-app-store.svg
