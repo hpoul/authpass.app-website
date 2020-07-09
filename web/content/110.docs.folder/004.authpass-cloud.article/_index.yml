@@ -8,3 +8,12 @@ teaser: authpass-platform-composition.png
 title: 'AuthPass Cloud'
 subTitle: 'Further improve your privacy and security with AuthPass Cloud.'
 embed:
+  figures:
+    authenticate:
+      title: 'Authenticate with AuthPass Cloud'
+      image: ./authenticate-authpass.png
+      resize:
+        width: 600
+    generate:
+      title: 'Generate your Email address'
+      image: ./generate-email-address.gif

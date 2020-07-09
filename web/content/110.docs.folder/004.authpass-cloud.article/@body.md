@@ -27,6 +27,37 @@ emails directly inside AuthPass. The main advantages are:
     for signing up for services to receive account related 
     transactional emails.
 
+# Enable AuthPass Cloud
+
+To make use of auto generated email addresses you have to verify
+your real email address once. This is only to prevent spamming and
+keep usage under control. We only use the email address for
+authentication.
+
+{{render content=node.embed.figures.authenticate/}}
+
+1. In the password list choose 'Authenticate with AuthPass Cloud'
+2. Enter your Email address
+3. You will receive a confirmation link to your email address.
+4. Once you received your email click the link and verify 
+   that you are not a robot by checking the recaptcha.
+5. You are good to go 👍
+
+# Generate Email Addresses
+
+After you have authenticated you can simply create an email address
+by clicking the `Generate Address` beside any entry value:
+
+{{render content=node.embed.figures.generate/}}
+
+# Read your Emails
+
+Although every account will receive its own email address, all
+emails can still be seen through one common interface.
+
+Just like before for Authentication select `AuthPass Mailboxes` from
+the AppBar menu.
+
 # Feedback and Questions
 
 If you have any questions we would love to get feedback.
