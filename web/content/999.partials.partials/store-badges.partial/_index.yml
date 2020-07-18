@@ -1,6 +1,7 @@
 embed:
   references:
     linuxRelease: /articles/linux-release/
+    windowsRelease: /articles/windows-release/
   figures:
     macAppStore:
       image: download-mac-app-store.svg

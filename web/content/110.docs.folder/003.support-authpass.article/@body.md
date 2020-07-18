@@ -20,7 +20,7 @@ This helps to inform about future improvements as well as the general direction.
 # Contribute code or sponsor us
 
 If you are a coder, don't hesitate to get in contact, I'm sure there is always
-enough work to do ;-) ⌨️
+enough work to do ;-) ⌨️ See our github page's [CONTRIBUTING.md](https://github.com/authpass/authpass/blob/master/CONTRIBUTING.md).
 
 {{render content=node.embed.figures.sponsorButton/}}
 

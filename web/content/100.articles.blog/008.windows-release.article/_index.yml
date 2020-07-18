@@ -1,0 +1,17 @@
+seo:
+  title: 'First Linux Desktop Release'
+  description: 'AuthPass can now run natively on linux desktops.'
+date: 2020-07-18
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: windows-desktop.jpg
+title: 'AuthPass released for Windows Desktop: AuthPass 1.7.0'
+mainImageOverride: './authpass-windows.png'
+embed:
+  figures:
+    windowsScreenshot:
+      title: 'AuthPass running in Windows'
+      image: ./authpass-windows.png
+    groupFilter:
+      title: 'Improved password group filter'
+      image: ./password-group-filter.gif

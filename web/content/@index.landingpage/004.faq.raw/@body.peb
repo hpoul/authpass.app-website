@@ -28,7 +28,7 @@
         {{ question }}
     </h2>
     <div class="faq-answer">
-    {{ answer }}
+    {{ answer|raw }}
     </div>
 </div>
 {% endmacro %}
@@ -41,11 +41,11 @@
             {{ faq(question="Where can I download the app?", answer="Download from your favorite App Store! Or fork the source code on GitHub!") }}
             {{ faq(
                 question="What's with Windows and Linux?",
-                answer="Since Flutter for Windows/Linux is still in an early stage without support for release versions. This can take a while. Contributions highly welcomed! Get in touch!") }}
+                answer="Good News! We have now launchehd also on Windows and Linux 👍️") }}
             </div>
             <div class="column">
             {{ faq(question="When will it be ready?", answer="IT IS NOW! Try it out, and don't forget to provide feedback, report bugs or leave reviews.") }}
-            {{ faq(question="What's with kdbx 4.x support?", answer="Right now there is no argon2 support for dart/flutter.") }}
+            {{ faq(question="How can I contribute to AuthPass or show my gratitude?", answer="Glad you asked 🙏️ <a href=\"" + render(renderContext.node.embed.references.support.hrefRenderable) + "\">Check out our article on how to contribute!</a>.") }}
             </div>
         </div>
     </div>
