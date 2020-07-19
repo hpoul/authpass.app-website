@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
     <loc>https://authpass.app/</loc>
-    <lastmod>2020-04-29T10:37:35Z</lastmod>
+    <lastmod>2020-07-18T21:25:56Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/articles/</loc>
@@ -37,8 +37,12 @@
     <lastmod>2020-06-10T14:07:24Z</lastmod>
   </url>
   <url>
+    <loc>https://authpass.app/articles/authpass-released-for-windows-desktop-authpass-1.7.0/</loc>
+    <lastmod>2020-07-18T15:56:30Z</lastmod>
+  </url>
+  <url>
     <loc>https://authpass.app/docs/</loc>
-    <lastmod>2020-07-09T14:51:43.253Z</lastmod>
+    <lastmod>2020-07-19T20:01:13.631Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/docs/about-authpass-password-manager/</loc>
@@ -62,7 +66,11 @@
   </url>
   <url>
     <loc>https://authpass.app/docs/contact/</loc>
-    <lastmod>2020-04-19T15:12:20Z</lastmod>
+    <lastmod>2020-07-18T15:56:30Z</lastmod>
+  </url>
+  <url>
+    <loc>https://authpass.app/docs/newsletter/</loc>
+    <lastmod>2020-07-18T21:25:56Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/legal/privacy-policy/</loc>
