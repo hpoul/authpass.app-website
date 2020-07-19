@@ -1,7 +1,7 @@
 seo:
-  title: 'First Linux Desktop Release'
-  description: 'AuthPass can now run natively on linux desktops.'
-date: 2020-07-18
+  title: 'First Windows Desktop Release'
+  description: 'AuthPass Password manager is now available natively on windows desktops.'
+date: 2020-07-19
 categories: ['Product']
 author: 'Herbert Poul'
 teaser: windows-desktop.jpg

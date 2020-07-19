@@ -21,5 +21,5 @@ or even get involved? Check out [this documentation for how to support us by spr
 !!! hint "Don't forget to"
     * [Like us on Facebook](https://facebook.com/AuthPass)
     * [Follow us on Twitter](https://twitter.com/AuthPass)
-    * [Subscribe to the latest news and releases](https://codeuxdesign.m-pages.com/authpass-news)
+    * [Subscribe to the latest news and releases](/docs/newsletter)
 

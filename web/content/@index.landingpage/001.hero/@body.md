@@ -31,7 +31,7 @@ or [contact us](/docs/contact).
     <span>Join Our Chat</span>
 </a>
 -->
-<a class="button is-primary is-medium has-icons-left" href="https://codeuxdesign.m-pages.com/authpass-news" target="_blank">
+<a class="button is-primary is-medium has-icons-left" href="https://authpass.app/docs/newsletter/">
     <span class="icon">
       <i class="fa fa-envelope"></i>
     </span>
