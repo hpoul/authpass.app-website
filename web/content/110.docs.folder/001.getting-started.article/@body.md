@@ -11,7 +11,7 @@ First, start by installing AuthPass on your device.
       and contains support for Google Drive and Dropbox.
 * **iOS (iPhone & iPad)**: [App Store](https://apps.apple.com/app/authpass-password-manager/id1479297675?ls=1&ct=website&at=11l8ru)
 * **Linux (Ubuntu, etc.)**: [Check our Linux-Release blog post](/articles/linux-release/)
-* **Windows 10**: Download installer: [AuthPass-setup-1.7.1_1324.exe](https://data.authpass.app/data/artifacts/AuthPass-setup-1.7.1_1324.exe)
+* **Windows 10**: Download installer: [AuthPass-setup-1.7.2_1333.exe](https://data.authpass.app/data/artifacts/AuthPass-setup-1.7.2_1333.exe)
 
 {{render content=rootNode.embed.references.storeBadges /}}
 

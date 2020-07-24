@@ -23,7 +23,7 @@ for linux and more.
 {{render content=node.embed.figures.windowsScreenshot /}}
 
 !!! success 'Windows Download'
-    Download Windows Setup: [AuthPass-setup-1.7.1_1324.exe](https://data.authpass.app/data/artifacts/AuthPass-setup-1.7.1_1324.exe) 
+    Download Windows Setup: [AuthPass-setup-1.7.2_1333.exe](https://data.authpass.app/data/artifacts/AuthPass-setup-1.7.2_1333.exe) 
 
 
 !!! warning 'Experimental'
