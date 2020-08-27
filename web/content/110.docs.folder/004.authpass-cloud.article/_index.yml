@@ -13,7 +13,20 @@ embed:
       title: 'Authenticate with AuthPass Cloud'
       image: ./authenticate-authpass.png
       resize:
-        width: 600
+        fillType: Fit
+        width: 500
     generate:
       title: 'Generate your Email address'
       image: ./generate-email-address.gif
+    emailList:
+      title: 'Email List'
+      image: ./email-list.png
+      resize:
+        fillType: Fit
+        width: 250
+    read:
+      title: 'Reading email for mailbox of an account'
+      image: ./read-email.png
+      resize:
+        fillType: Fit
+        width: 300

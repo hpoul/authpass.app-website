@@ -58,6 +58,13 @@ emails can still be seen through one common interface.
 Just like before for Authentication select `AuthPass Mailboxes` from
 the AppBar menu.
 
+{{render content=node.embed.figures.emailList/}}
+
+Once you open an email, you will see the **associated mailbox**
+as well as for **which password entry** it was created.
+
+{{render content=node.embed.figures.read/}}
+
 # Feedback and Questions
 
 If you have any questions we would love to get feedback.

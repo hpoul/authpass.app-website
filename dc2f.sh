@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gradleArgs="-q"
-gradleArgs=""
+gradleArgs=${GRADLE_ARGS:-}
 args=""
 
 echo "args: $@"
