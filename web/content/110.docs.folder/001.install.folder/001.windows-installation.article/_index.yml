@@ -1,0 +1,15 @@
+seo:
+  title: 'Install AuthPass on Windows'
+  description: 'Windows setup download and installation procedure.'
+date: 2020-08-31
+categories: ['Documentation']
+author: 'Herbert Poul'
+teaser: authpass-platform-composition.png
+title: 'Install AuthPass on Windows'
+subTitle: 'Windows Setup'
+slug: windows-installation
+embed:
+  figures:
+    fosshub:
+      image: fosshub-download.svg
+      inlineImage: true

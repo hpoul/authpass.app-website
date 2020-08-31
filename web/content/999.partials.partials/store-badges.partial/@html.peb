@@ -4,5 +4,5 @@
 <a class="macos" href="{{ renderContext.rootNode.storeUrls.macos }}" target="_blank">{{render(node.embed.figures.macAppStore)}}</a>
 <br />
     <a href="{{render(renderContext.node.embed.references.linuxRelease.hrefRenderable)}}"><img alt="Linux Desktop" src="https://img.shields.io/badge/Linux-snap_%26%20tar.gz-e95420" /></a>
-    <a href="{{render(renderContext.node.embed.references.windowsRelease.hrefRenderable)}}#installation"><img alt="Windows Desktop" src="https://img.shields.io/badge/Windows-exe-blue" /></a>
+    <a href="{{render(renderContext.node.embed.references.windowsRelease.hrefRenderable)}}"><img alt="Windows Desktop" src="https://img.shields.io/badge/Windows-exe-blue" /></a>
 </div>
