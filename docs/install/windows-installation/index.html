@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Fingerprint secured quick unlock | AuthPass.app Password Manager</title>
-    <meta content="Fingerprint secured quick unlock | AuthPass.app Password Manager" property="og:title">
+    <title>Install AuthPass on Windows | AuthPass.app Password Manager</title>
+    <meta content="Install AuthPass on Windows | AuthPass.app Password Manager" property="og:title">
     <meta charset="UTF-8">
-    <link rel="canonical" href="https://authpass.app/articles/quick-unlock-with-fingerprint/">
+    <link rel="canonical" href="https://authpass.app/docs/install/windows-installation/">
     <link rel="stylesheet" href="/styles/css/main.d7fb6c3895cfc4ebcebd905c4107a94a4197f823bf508e4b12d860eebb004806.css" integrity="sha256-1/tsOJXPxOvOvZBcQQepSkGX+CO/UI5LEthg7rsASAY=">
     <script type="text/javascript" src="/script/main.3d1df54f8d65ad0229956d791eda963f1de698024e93271eb1f879f88c855ac7.js" async="async" integrity="sha256-PR31T41lrQIplW15HtqWPx3mmAJOkycesfh5+IyFWsc="></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
     <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
     <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
-    <meta name="description" content="Unlock your password vault by fingerprint.">
-    <meta content="Unlock your password vault by fingerprint." property="og:description">
-    <meta content="Unlock your password vault by fingerprint." property="twitter:description">
-    <meta content="https://authpass.app/articles/quick-unlock-with-fingerprint/" property="og:url">
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Fingerprint secured quick unlock","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/articles/quick-unlock-with-fingerprint/"},"image":"https://authpass.app/articles/quick-unlock-with-fingerprint/image-fingerprint.png","wordcount":48,"url":"https://authpass.app/articles/quick-unlock-with-fingerprint/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Unlock your password vault by fingerprint."}</script>
-    <meta content="https://authpass.app/articles/quick-unlock-with-fingerprint/image-fingerprint.png" property="og:image">
-    <meta content="2048" property="og:image:width">
-    <meta content="1536" property="og:image:height">
-    <meta content="https://authpass.app/articles/quick-unlock-with-fingerprint/image-fingerprint.png" property="twitter:image">
+    <meta name="description" content="Windows setup download and installation procedure.">
+    <meta content="Windows setup download and installation procedure." property="og:description">
+    <meta content="Windows setup download and installation procedure." property="twitter:description">
+    <meta content="https://authpass.app/docs/install/windows-installation/" property="og:url">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Install AuthPass on Windows","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/docs/install/windows-installation/"},"image":"https://authpass.app/docs/install/windows-installation/authpass-platform-composition.png","wordcount":71,"url":"https://authpass.app/docs/install/windows-installation/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Windows setup download and installation procedure."}</script>
+    <meta content="https://authpass.app/docs/install/windows-installation/authpass-platform-composition.png" property="og:image">
+    <meta content="1353" property="og:image:width">
+    <meta content="840" property="og:image:height">
+    <meta content="https://authpass.app/docs/install/windows-installation/authpass-platform-composition.png" property="twitter:image">
     <meta content="article" property="og:type">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91100035-8"></script>
@@ -36,39 +36,48 @@
       <div class="container">
         <div class="navbar-brand"><a href="/" class="navbar-item"><picture><source srcset="/NoResize_2147483647x2147483647_webp_website-header.png.webp" type="image/webp"></source><img alt="AuthPass.app Password Manager" src="/NoResize_2147483647x2147483647_orig_website-header.png" width="711" height="108"></picture></a><a class="navbar-burger" role="button" data-target="main-menu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a></div>
         <div class="navbar-menu" id="main-menu">
-          <div class="navbar-end"><a href="/" class="navbar-item" title="Home">Home</a><a href="/articles/" class="navbar-item is-active" title="Blog">Blog</a><a href="/docs/" class="navbar-item" title="Docs/Help">Docs/Help</a></div>
+          <div class="navbar-end"><a href="/" class="navbar-item" title="Home">Home</a><a href="/articles/" class="navbar-item" title="Blog">Blog</a><a href="/docs/" class="navbar-item is-active" title="Docs/Help">Docs/Help</a></div>
         </div>
       </div>
     </nav>
     <main>
       <div>
         <div class="hero is-medium has-bg-img">
-          <div class="bg-image" style="background-image: url('/articles/quick-unlock-with-fingerprint/image-fingerprint.png')">x</div>
+          <div class="bg-image" style="background-image: url('/docs/install/windows-installation/authpass-platform-composition.png')">x</div>
           <div class="hero-body has-text-centered">
-            <h1 class="title">Quick Unlock with Fingerprint</h1>
-            <h2 class="subtitle is-size-6 has-text-weight-bold">12 September 2019</h2>
+            <h1 class="title">Install AuthPass on Windows</h1>
+            <h2 class="subtitle is-size-6 has-text-weight-bold">Windows Setup</h2>
           </div>
         </div>
         <div class="container">
           <div class="section">
             <div class="columns">
               <div class="column is-offset-2 is-8">
-                <div class="content has-drop-caps"><p>We have just released version 1.0.2 of AuthPass Password manager.</p>
-<!--more-->
-<h2 id="for-mac-desktop-android-and-ios"><a href="#for-mac-desktop-android-and-ios" class="md-anchor">For Mac Desktop, Android and iOS!</a></h2>
+                <div class="content has-drop-caps"><svg xmlns="http://www.w3.org/2000/svg" class="adm-hidden">
+<symbol id="adm-tip">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m12.3 10c2.8-.7 4.2-3.8 2.1-7.4 8.1 3.2 7.5 18.1-2.6 18.4-8.1.2-9.8-11.4-4.4-14.8.2 3.3 2.8 4.3 4.9 3.8zm-3.2 5.8c.2 1.6 2.5 1.9 3.6 1.5 2.8-1 2.5-4 2.1-5.1-.8 1.4-1.3 1.7-2.2 2s-3.7-.7-3.5 1.6z" fill="currentColor"/>
+</svg>
+</symbol>
+</svg>
+<h1 id="windows-installation"><a href="#windows-installation" class="md-anchor">Windows Installation</a></h1>
+<p>Windows is still in an early stage, although there are already
+a significant amount of users there might still be a few usability
+problems.</p>
+<p>If you use AuthPass for Windows please provide feedback. Thanks!</p>
+<h2 id="download-the-latest-setup"><a href="#download-the-latest-setup" class="md-anchor">Download the latest Setup</a></h2>
 <ul>
-<li>UI Improvements for small(er) screens.</li>
-<li>Improved kdbx 2.x compatibility.</li>
-<li>iOS/MacOS: Added support for fingerprints (Android already had it in 1.0.0)</li>
-<li>MacOS: Fix bug opening file outside the App Sandbox</li>
+<li>Download the latest version: <a href="https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe"><img src="https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe/shield" alt="AuthPass-setup-stable.exe" /></a></li>
+<li>Mirror: <a href="https://www.fosshub.com/AuthPass.html">available on FossHub</a></li>
 </ul>
-<div class="store-badges">
-<a class="android" href='https://play.google.com/store/apps/details?id=design.codeux.authpass&amp;referrer=utm_source%3Dwebsite'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-<a href="https://apps.apple.com/app/authpass-password-manager/id1479297675?ls=1&amp;ct=website&amp;at=11l8ru" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2018-12-18&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
-<a class="macos" href="https://apps.apple.com/app/authpass-password-manager/id1478552452?ls=1&amp;mt=12&amp;ct=website&amp;at=11l8ru" target="_blank"><img src="/partials/store-badges/download-mac-app-store.svg"></a>
-<br />
-    <a href="/articles/linux-desktop-release-authpass-1.6.3/"><img alt="Linux Desktop" src="https://img.shields.io/badge/Linux-snap_%26%20tar.gz-e95420" /></a>
-    <a href="/docs/install/windows-installation/"><img alt="Windows Desktop" src="https://img.shields.io/badge/Windows-exe-blue" /></a>
+<div class="adm-block adm-tip">
+<div class="adm-heading">
+<svg class="adm-icon"><use xlink:href="#adm-tip" /></svg><span>Keep up to date</span>
+</div>
+<div class="adm-body">
+<p>AuthPass is updated regularly. Please check regularly for updates.
+These provide regular updates, bugfixes and feature enhancements.</p>
+</div>
 </div>
 </div>
               </div>
@@ -85,7 +94,7 @@
     function sparrowOnLoad() {
         window.SparrowLauncher('popup', {
             variables: {
-                'page': "\/articles\/quick-unlock-with-fingerprint\/",
+                'page': "\/docs\/install\/windows-installation\/",
                 'domain': window.location.host
             }
         });

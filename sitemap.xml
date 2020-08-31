@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://authpass.app/docs/</loc>
-    <lastmod>2020-08-27T13:40:06.551Z</lastmod>
+    <lastmod>2020-08-31T12:50:36.722Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/docs/about-authpass-password-manager/</loc>
@@ -51,6 +51,10 @@
   <url>
     <loc>https://authpass.app/docs/getting-started/</loc>
     <lastmod>2020-04-19T15:12:20Z</lastmod>
+  </url>
+  <url>
+    <loc>https://authpass.app/docs/install/windows-installation/</loc>
+    <lastmod>2020-08-31T12:50:07Z</lastmod>
   </url>
   <url>
     <loc>https://authpass.app/docs/store-keepass-passwords-nextcloud-webdav/</loc>
