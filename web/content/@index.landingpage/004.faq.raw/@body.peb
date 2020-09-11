@@ -41,7 +41,7 @@
             {{ faq(question="Where can I download the app?", answer="Download from your favorite App Store! Or fork the source code on GitHub!") }}
             {{ faq(
                 question="What's with Windows and Linux?",
-                answer="Good News! We have now launchehd also on Windows and Linux 👍️") }}
+                answer="Good News! We have now launched also on Windows and Linux 👍️") }}
             </div>
             <div class="column">
             {{ faq(question="When will it be ready?", answer="IT IS NOW! Try it out, and don't forget to provide feedback, report bugs or leave reviews.") }}
