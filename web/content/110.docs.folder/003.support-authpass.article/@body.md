@@ -22,6 +22,7 @@ This helps to inform about future improvements as well as the general direction.
 
 * The easiest is probably the [GitHub Issue tracker](https://github.com/authpass/authpass/issues)
 * Just [post on the facebook wall](https://www.facebook.com/AuthPass/).
+* [Download and test early access versions](../beta-testing)
 
 # Contribute code or sponsor us
 
