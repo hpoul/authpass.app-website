@@ -44,6 +44,13 @@ And fill out the form as described:
 
 Press **Ok** to continue and login to your WebDAV account.
 
+!!! warning "Note"
+    Please make sure that you use the **exact** URL as shown in the
+    settings dialog of NextCloud. It might differ from the example.
+    
+    For example it could include a different path, or include your
+    account name.
+
 # Select your kdbx file.
 
 If your login works correctly you will see a list of all folder and files in
