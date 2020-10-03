@@ -10,6 +10,7 @@ If you use AuthPass for Windows please provide feedback. Thanks!
 
 * Download the latest version: [![AuthPass-setup-stable.exe](https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe/shield)](https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe)
 * Mirror: [available on FossHub](https://www.fosshub.com/AuthPass.html)
+* Install via [Chocolatey](https://chocolatey.org/packages/authpass) `choco install authpass`
 
 !!! hint "Keep up to date"
    AuthPass is updated regularly. Please check regularly for updates.
