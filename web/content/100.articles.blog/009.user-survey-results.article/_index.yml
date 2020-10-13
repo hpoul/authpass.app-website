@@ -1,0 +1,29 @@
+seo:
+  title: 'Improving AuthPass with your feedback - AuthPass Survey Results'
+  description: 'Thanks for everyone who responded to the AuthPass Survey.'
+date: 2020-10-13
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: satisfaction-ostype.png
+title: 'Improving AuthPass with your feedback 🧐 - AuthPass Survey Results (Part 1)'
+mainImageOverride: './authpass-windows.png'
+embed:
+  figures:
+    satisfaction:
+      title: 'User satisfaction with AuthPass'
+      image: ./satisfaction.png
+    satisfactionOsType:
+      title: 'User satisfaction by Operating System'
+      image: ./satisfaction-ostype.png
+    platform:
+      title: 'Platforms people used in the last month'
+      image: ./platform.png
+    androidAutofill:
+      title: 'Seems like we have to improve Autofill discoverability'
+      image: ./android-autofill.png
+    keepassApps:
+      title: 'Most common other KeePass apps'
+      image: ./keepass-apps.png
+    nativeLanguage:
+      title: 'Variety of spoken languages'
+      image: ./native-spoken-language.png
