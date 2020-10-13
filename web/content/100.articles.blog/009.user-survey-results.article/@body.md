@@ -47,6 +47,7 @@ invisible to measuring user interactions using analytics.
 
 !!! question "🤔️"
     I'm still not sure what those 2% of *Other* are using?
+    If you have [any idea, let me know in the forum](https://forum.authpass.app/t/survey-results-part-1-are-in-what-do-you-think/16) 😅️
 
 ## Android Autofill discoverability
 
@@ -104,6 +105,6 @@ the data and slice and dice to make sense of everything!
 Do you have any further feedback? What surprised you most
 about those results?
 
-[Join the AuthPass Forum](https://forum.authpass.app/) to discuss
+[Join the AuthPass Forum](https://forum.authpass.app/t/survey-results-part-1-are-in-what-do-you-think/16) to discuss
 these results, and more!
 
