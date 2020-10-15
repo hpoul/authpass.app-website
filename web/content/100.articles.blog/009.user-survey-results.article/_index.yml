@@ -6,7 +6,6 @@ categories: ['Product']
 author: 'Herbert Poul'
 teaser: satisfaction-ostype.png
 title: 'Improving AuthPass with your feedback 🧐 - AuthPass Survey Results (Part 1)'
-mainImageOverride: './authpass-windows.png'
 embed:
   figures:
     satisfaction:
