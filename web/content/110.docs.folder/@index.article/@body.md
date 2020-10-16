@@ -3,8 +3,8 @@ Getting started managing your passwords with AuthPass.
 <!--more-->
 
 !!! note "Contributions welcome"
-    Documentation is still a bit lacking ;-) Join our [discord channel](https://authpass.app/go/discord) if you
-    experience problems. If you feel comfortable writing documentation
+    Documentation is still a bit lacking ;-) Join our [user help forum](https://forum.authpass.app/c/user-help/5) if you
+    experience problems, have questions or just want to chat. If you feel comfortable writing documentation
     we would highly welcome any contributions, just [get in touch](/docs/contact).
 
 ## Documentation
@@ -33,3 +33,5 @@ or even get involved? Check out [this documentation for how to support us by spr
     * [Follow us on Twitter](https://twitter.com/AuthPass)
     * [Subscribe to the latest news and releases](/docs/newsletter)
 
+Also make sure to [join the forum](https://forum.authpass.app/) - Let us know
+what you think, what you miss and how you are using AuthPass :-)
