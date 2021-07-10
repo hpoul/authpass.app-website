@@ -84,11 +84,16 @@ dependencies {
 if (gradle.startParameter.isContinuous) {
     tasks.named<ratpack.gradle.continuous.RatpackContinuousRun>("run") {
         flattenClassloaders = true
+//        jvmArgs = listOf("--add-opens java.base/java.lang=ALL-UNNAMED",
+//          "--add-opens java.base/java.util=ALL-UNNAMED")
     }
 }
 
 application {
     // Define the main class for the application.
     mainClassName = "app.authpass.website.WebsiteKt"
+//    applicationDefaultJvmArgs =
+//      listOf("--add-opens java.base/java.lang=ALL-UNNAMED",
+//        "--add-opens java.base/java.util=ALL-UNNAMED")
 }
 

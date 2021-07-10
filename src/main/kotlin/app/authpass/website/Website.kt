@@ -98,7 +98,7 @@ private fun renderSurveySparrow(renderContext: RenderContext<*>): String {
 @Suppress("unused")
 abstract class AuthPassWebsite : BaseWebsite {
     abstract val storeUrls: StoreUrls
-    val surveySparrow = SurveySparrow()
+    open val surveySparrow = SurveySparrow()
 
     override fun createLinkedData(context: RenderContext<*>): Map<String, Any?>? =
         requireNotNull(super.createLinkedData(context)) +
