@@ -1,0 +1,17 @@
+seo:
+  title: 'AuthPass 1.8.0 - Available on Microsoft Store (Windows)'
+  description: 'Download AuthPass directly from the Microsoft Store!'
+date: 2021-07-11
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: windows-desktop.jpg
+title: 'AuthPass 1.8.0 - Available on Microsoft Store (Windows)'
+mainImageOverride: './authpass-windows.png'
+embed:
+  figures:
+    windowsScreenshot:
+      title: 'AuthPass running in Windows'
+      image: ./authpass-windows.png
+    groupFilter:
+      title: 'Improved password group filter'
+      image: ./password-group-filter.gif
