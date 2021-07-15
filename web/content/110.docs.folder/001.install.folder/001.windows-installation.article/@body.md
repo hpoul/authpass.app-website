@@ -6,6 +6,13 @@ problems.
 
 If you use AuthPass for Windows please provide feedback. Thanks!
 
+## Microsoft Store
+
+The preferred installation method is [through the Microsoft Store](https://www.microsoft.com/store/apps/9p5n6znpsfbn?cid=storebadge&ocid=badge).
+It ensures automatic updates and enforces signatures.
+
+<center><a href='//www.microsoft.com/store/apps/9p5n6znpsfbn?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' style='width: 284px; height: 104px;' /></a></center>
+
 ## Download the latest Setup
 
 * Download the latest version: [![AuthPass-setup-stable.exe](https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe/shield)](https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe)
