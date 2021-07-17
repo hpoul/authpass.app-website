@@ -49,6 +49,8 @@ footerMenu:
     children:
       - name: 'Privacy Policy'
         ref: '/legal/privacy-policy'
+      - name: 'Terms and Conditions'
+        ref: '/legal/terms-and-conditions'
 mainMenu:
   - name: 'Home'
     ref: '/'
