@@ -5,8 +5,9 @@ MacOS, Linux and Windows</strong>. Compatible with KeePass.</p>
 
 <br />
 
-**Join Our Community** - Source code is available on GitHub, please report bugs as [GitHub issue](https://github.com/authpass/authpass/issues)
-or [contact us](/docs/contact).
+**Join Our Community** - Source code is available on GitHub, 
+[get help, suggest improvements or debug problems in our forum](https://forum.authpass.app/), 
+report bugs as [GitHub issue](https://github.com/authpass/authpass/issues).
 
 <div class="has-text-centered">
 <a class="button is-primary is-medium has-icons-left" href="https://github.com/authpass/authpass">

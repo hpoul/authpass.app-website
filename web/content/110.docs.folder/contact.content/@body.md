@@ -1,3 +1,12 @@
+# Forum
+
+The easiest way to get in [contact and talk about AuthPass is via our Forum](https://forum.authpass.app/).
+
+* [Get Help](https://forum.authpass.app/c/user-help/5)
+* [Suggestion Features](https://forum.authpass.app/c/feature-discussions/7)
+* [Tell us about your experience](https://forum.authpass.app/c/experience/8)
+* [Look up common problems](https://forum.authpass.app/c/user-help/common-error-messages-and-problems/10)
+
 # Chat
 
 Do you want to chat about AuthPass or need some help? 
