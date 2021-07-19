@@ -18,6 +18,7 @@ It ensures automatic updates and enforces signatures.
 * Download the latest version: [![AuthPass-setup-stable.exe](https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe/shield)](https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe)
 * Mirror: [available on FossHub](https://www.fosshub.com/AuthPass.html)
 * Install via [Chocolatey](https://chocolatey.org/packages/authpass) `choco install authpass`
+* Portable version (No Installation needed, all files kept in application directory.) [AuthPass-portable-1.8.2_1741.zip](https://authpass-data.codeux.design/data/artifacts/AuthPass-portable-1.8.2_1741.zip)
 
 !!! hint "Keep up to date"
    AuthPass is updated regularly. Please check regularly for updates.
