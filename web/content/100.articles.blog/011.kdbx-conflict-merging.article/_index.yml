@@ -1,0 +1,14 @@
+seo:
+  title: 'AuthPass 1.9.0 - Merging of kdbx file conflicts'
+  description: 'Merge conflicts due to parallel changes.'
+date: 2021-08-02
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: merge-confirmation.png
+title: 'AuthPass 1.9.0 - Merging of kdbx file conflicts'
+mainImageOverride: './merge-confirmation.png'
+embed:
+  figures:
+    mergeConfirmation:
+      title: 'Confirmation of a successful merge'
+      image: ./merge-confirmation.png
