@@ -15,6 +15,7 @@
         <rdf:li />
         <rdf:li />
         <rdf:li />
+        <rdf:li />
       </rdf:Seq>
     </items>
   </channel>
@@ -62,6 +63,11 @@
     <title>Improving AuthPass with your feedback &#x1f9d0; - AuthPass Survey Results (Part 1)</title>
     <link>https://authpass.app/articles/improving-authpass-with-your-feedback-authpass-survey-results-part-1/</link>
     <dc:date>2020-10-13T08:00:00Z</dc:date>
+  </item>
+  <item rdf:about="https://authpass.app/articles/authpass-1.8.0-available-on-microsoft-store-windows/">
+    <title>AuthPass 1.8.0 - Available on Microsoft Store (Windows)</title>
+    <link>https://authpass.app/articles/authpass-1.8.0-available-on-microsoft-store-windows/</link>
+    <dc:date>2021-07-11T08:00:00Z</dc:date>
   </item>
 </rdf:RDF>
 

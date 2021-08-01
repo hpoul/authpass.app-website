@@ -15,7 +15,7 @@
     <meta content="Windows setup download and installation procedure." property="og:description">
     <meta content="Windows setup download and installation procedure." property="twitter:description">
     <meta content="https://authpass.app/docs/install/windows-installation/" property="og:url">
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Install AuthPass on Windows","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/docs/install/windows-installation/"},"image":"https://authpass.app/docs/install/windows-installation/authpass-platform-composition.png","wordcount":77,"url":"https://authpass.app/docs/install/windows-installation/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Windows setup download and installation procedure."}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Install AuthPass on Windows","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/docs/install/windows-installation/"},"image":"https://authpass.app/docs/install/windows-installation/authpass-platform-composition.png","wordcount":117,"url":"https://authpass.app/docs/install/windows-installation/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Windows setup download and installation procedure."}</script>
     <meta content="https://authpass.app/docs/install/windows-installation/authpass-platform-composition.png" property="og:image">
     <meta content="1353" property="og:image:width">
     <meta content="840" property="og:image:height">
@@ -65,11 +65,16 @@
 a significant amount of users there might still be a few usability
 problems.</p>
 <p>If you use AuthPass for Windows please provide feedback. Thanks!</p>
+<h2 id="microsoft-store"><a href="#microsoft-store" class="md-anchor">Microsoft Store</a></h2>
+<p>The preferred installation method is <a href="https://www.microsoft.com/store/apps/9p5n6znpsfbn?cid=storebadge&amp;ocid=badge">through the Microsoft Store</a>.
+It ensures automatic updates and enforces signatures.</p>
+<center><a href='//www.microsoft.com/store/apps/9p5n6znpsfbn?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' style='width: 284px; height: 104px;' /></a></center>
 <h2 id="download-the-latest-setup"><a href="#download-the-latest-setup" class="md-anchor">Download the latest Setup</a></h2>
 <ul>
 <li>Download the latest version: <a href="https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe"><img src="https://data.authpass.app/data/artifact.download/AuthPass-setup-stable.exe/shield" alt="AuthPass-setup-stable.exe" /></a></li>
 <li>Mirror: <a href="https://www.fosshub.com/AuthPass.html">available on FossHub</a></li>
 <li>Install via <a href="https://chocolatey.org/packages/authpass">Chocolatey</a> <code>choco install authpass</code></li>
+<li>Portable version (No Installation needed, all files kept in application directory.) <a href="https://authpass-data.codeux.design/data/artifacts/AuthPass-portable-1.8.2_1741.zip">AuthPass-portable-1.8.2_1741.zip</a></li>
 </ul>
 <div class="adm-block adm-tip">
 <div class="adm-heading">
@@ -88,20 +93,18 @@ These provide regular updates, bugfixes and feature enhancements.</p>
         <div class="container">
           <div class="section">
             <div class="columns">
-              <div class="column is-offset-2 is-8 is-centered"><script>
-    window.sparrowConfig = {
-        triggerOnLoad: false
-    };
-    function sparrowOnLoad() {
-        window.SparrowLauncher('popup', {
-            variables: {
-                'page': "\/docs\/install\/windows-installation\/",
-                'domain': window.location.host
-            }
-        });
-    }
-</script>
-<script>(function(){var e="ss-widget",t="script",a=document,r=window;var s,n,c;r.SS_WIDGET_TOKEN="tt-cfae4c";r.SS_ACCOUNT="codeuxdesign.surveysparrow.com";r.SS_SURVEY_NAME="authpass-helpful";if(!a.getElementById(e)){var S=function(){S.update(arguments)};S.args=[];S.update=function(e){S.args.push(e)};r.SparrowLauncher=S;s=a.getElementsByTagName(t);c=s[s.length-1];n=a.createElement(t);n.type="text/javascript";n.async=!0;n.id=e;n.src=["https://","codeuxdesign.surveysparrow.com/widget/",r.SS_WIDGET_TOKEN].join("");n.onload=sparrowOnLoad;c.parentNode.insertBefore(n,c)}})();</script></div>
+              <div class="column is-offset-2 is-8 is-centered"><div id='discourse-comments'></div>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://forum.authpass.app/',
+                     discourseEmbedUrl: 'https:\/\/authpass.app\/docs\/install\/windows-installation\/' };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script></div>
             </div>
           </div>
         </div>
@@ -130,6 +133,7 @@ These provide regular updates, bugfixes and feature enhancements.</p>
           <div class="column"><span class="footer-title title is-4">Legal</span>
             <ul>
               <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="/legal/terms-and-conditions/">Terms and Conditions</a></li>
             </ul>
           </div>
         </div>
