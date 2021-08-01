@@ -19,8 +19,16 @@ result=$(
 curl -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/purge_cache" \
      -H "Authorization: Bearer $CF_API_TOKEN" \
      -H "Content-Type: application/json" \
-     --data "$data"
+     --data '{"purge_everything":true}'
 )
+#
+#
+#result=$(
+#curl -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/purge_cache" \
+#     -H "Authorization: Bearer $CF_API_TOKEN" \
+#     -H "Content-Type: application/json" \
+#     --data "$data"
+#)
 
 set -x
 

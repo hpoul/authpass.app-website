@@ -40,7 +40,7 @@ class WebsiteTheme : BaseTheme() {
                     div("section") {
                         div("columns") {
                             div("column is-offset-2 is-8 is-centered") {
-                                unsafe { raw(renderSurveySparrow(context)) }
+                                unsafe { raw(renderDiscourseEmbed(context)) }
                             }
                         }
                     }
@@ -65,6 +65,32 @@ class SurveySparrow : Renderable {
         return renderSurveySparrow(renderContext)
     }
 
+}
+
+private fun renderDiscourseEmbed(renderContext: RenderContext<*>): String {
+    val permalink = renderContext.node.let {
+        StringEscapeUtils.escapeJson(
+            renderContext.href(
+                it,
+                absoluteUrl = true
+            )
+        )
+    } ?: ""
+    //language=html
+    return """
+    <div id='discourse-comments'></div>
+
+    <script type="text/javascript">
+      DiscourseEmbed = { discourseUrl: 'https://forum.authpass.app/',
+                         discourseEmbedUrl: '$permalink' };
+
+      (function() {
+        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+        d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+      })();
+    </script>
+    """.trimIndent()
 }
 
 private fun renderSurveySparrow(renderContext: RenderContext<*>): String {
