@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>AuthPass 1.9.0 - Merging of kdbx file conflicts | AuthPass.app Password Manager</title>
+    <meta content="AuthPass 1.9.0 - Merging of kdbx file conflicts | AuthPass.app Password Manager" property="og:title">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://authpass.app/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/">
+    <link rel="stylesheet" href="/styles/css/main.8e707cabe830a35dfe4fd566d846e0abae739621ce9d2abc7340200fd89e0e11.css" integrity="sha256-jnB8q+gwo13+T9Vm2Ebgq65zliHOnSq8c0AgD9ieDhE=">
+    <script type="text/javascript" src="/script/main.3d1df54f8d65ad0229956d791eda963f1de698024e93271eb1f879f88c855ac7.js" async="async" integrity="sha256-PR31T41lrQIplW15HtqWPx3mmAJOkycesfh5+IyFWsc="></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <meta name="description" content="Merge conflicts due to parallel changes.">
+    <meta content="Merge conflicts due to parallel changes." property="og:description">
+    <meta content="Merge conflicts due to parallel changes." property="twitter:description">
+    <meta content="https://authpass.app/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/" property="og:url">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"AuthPass 1.9.0 - Merging of kdbx file conflicts","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/"},"image":"https://authpass.app/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/merge-confirmation.png","wordcount":236,"url":"https://authpass.app/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Merge conflicts due to parallel changes."}</script>
+    <meta content="https://authpass.app/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/merge-confirmation.png" property="og:image">
+    <meta content="1824" property="og:image:width">
+    <meta content="1480" property="og:image:height">
+    <meta content="https://authpass.app/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/merge-confirmation.png" property="twitter:image">
+    <meta content="article" property="og:type">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91100035-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91100035-8');
+</script>
+  </head>
+  <body class="has-navbar-fixed-top has-spaced-navbar-fixed-top">
+    <nav class="main-navbar navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand"><a href="/" class="navbar-item"><picture><source srcset="/NoResize_2147483647x2147483647_webp_website-header.png.webp" type="image/webp"></source><img alt="AuthPass.app Password Manager" src="/NoResize_2147483647x2147483647_orig_website-header.png" width="711" height="108"></picture></a><a class="navbar-burger" role="button" data-target="main-menu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a></div>
+        <div class="navbar-menu" id="main-menu">
+          <div class="navbar-end"><a href="/" class="navbar-item" title="Home">Home</a><a href="/articles/" class="navbar-item is-active" title="Blog">Blog</a><a href="/docs/" class="navbar-item" title="Docs/Help">Docs/Help</a><a href="https://forum.authpass.app/" class="navbar-item" title="Forum">Forum</a></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <div class="hero is-medium has-bg-img">
+          <div class="bg-image" style="background-image: url('/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/merge-confirmation.png')">x</div>
+          <div class="hero-body has-text-centered">
+            <h1 class="title">AuthPass 1.9.0 - Merging of kdbx file conflicts</h1>
+            <h2 class="subtitle is-size-6 has-text-weight-bold">August 2, 2021</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section">
+            <div class="columns">
+              <div class="column is-offset-2 is-8">
+                <div class="content has-drop-caps"><svg xmlns="http://www.w3.org/2000/svg" class="adm-hidden">
+<symbol id="adm-success">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m3.3 14.3 1.4-2.8c.2-.4.7-.5 1-.2l4.7 4.9c.3.3.7.2 1-.1l7.1-10.2c.2-.3.7-.4 1 0l1.9 2.4c.2.2.2.6 0 .8l-9.7 10.9c-.2.2-.6.3-.8.1l-7.5-5.1c-.2-.1-.3-.5-.1-.7z" fill="currentColor"/>
+</svg>
+</symbol>
+</svg>
+<p>With the new version of AuthPass 1.9.0 it is now possible to merge conflicts if you
+modify the same kdbx file in parallel on two different devices. This ensures
+that you don&rsquo;t lose any passwords, even if you use a cached version of your kdbx file while offline.</p>
+<!--more-->
+<h2 id="authpass-190-changes"><a href="#authpass-190-changes" class="md-anchor">AuthPass 1.9.0 Changes</a></h2>
+<ul>
+<li>Fixed null exception when copying username/password from entry which has none defined.</li>
+<li>Fixes #188 - Show banner to users to suggest activating autofill (@ATofighi)</li>
+<li>KDBX: Fix merging of files with incoming deleted objects.</li>
+<li>Add support for permanently deleting groups and password entries. #99</li>
+<li>When a conflict is detected during save, automatically merge files #80</li>
+<li>Dropbox: Fixed conflict detection.</li>
+<li>Google Drive: Implement rudimentary conflict detection #34</li>
+</ul>
+<h2 id="merging"><a href="#merging" class="md-anchor">Merging</a></h2>
+
+  <figure><picture><source srcset="/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/NoResize_2147483647x2147483647_webp_merge-confirmation.png.webp" type="image/webp"></source><img alt="Confirmation of a successful merge" src="/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/NoResize_2147483647x2147483647_orig_merge-confirmation.png" width="1824" height="1480"></picture>
+    <figcaption>
+      <h4>Confirmation of a successful merge</h4>
+    </figcaption>
+  </figure>
+<p>This is supported on <strong>all cloud storage backends</strong>. (Not for local files).
+When a change is saved and it is detected that the remote file was changed as
+well, a merge will be automatically initiated. As a user you will then see a
+merge message showing the incoming change.</p>
+<p>Since this is a new feature, I would appreciate any feedback. If you happen
+to test this feature (preferably first on a backup password file), let me
+know in the forum at https://forum.authpass.app/ !</p>
+<div class="adm-block adm-success">
+<div class="adm-heading">
+<svg class="adm-icon"><use xlink:href="#adm-success" /></svg><span>Get Involved!</span>
+</div>
+<div class="adm-body">
+<p>Want to help out with the development of AuthPass? Any kind of support is appreciated.
+There is now a <a href="https://forum.authpass.app/c/contributors/contribute/13">contribution section in the Forum which lists many ways to
+help out</a>!
+<a href="https://forum.authpass.app/c/contributors/contribute/13">https://forum.authpass.app/c/contributors/contribute/13</a></p>
+</div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section">
+            <div class="columns">
+              <div class="column is-offset-2 is-8 is-centered"><div id='discourse-comments'></div>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://forum.authpass.app/',
+                     discourseEmbedUrl: 'https:\/\/authpass.app\/articles\/authpass-1.9.0-merging-of-kdbx-file-conflicts\/' };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column"><span class="footer-title title is-4">Project</span>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/articles/">Blog &amp; News</a></li>
+              <li><a href="/docs/">Documentation &amp; Help</a></li>
+              <li><a href="/docs/newsletter/">Stay connected: Newsletter</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Social</span>
+            <ul>
+              <li><a href="https://forum.authpass.app/">Forum</a></li>
+              <li><a href="https://facebook.com/AuthPass">Facebook</a></li>
+              <li><a href="https://twitter.com/AuthPass">Twitter</a></li>
+              <li><a href="https://github.com/authpass/authpass">GitHub</a></li>
+              <li><a href="https://discord.gg/Nuraxmc">Discord Chat</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Legal</span>
+            <ul>
+              <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="/legal/terms-and-conditions/">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="github-fork-ribbon right-bottom fixed" href="https://github.com/authpass/authpass" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    </footer>
+  </body>
+</html>
