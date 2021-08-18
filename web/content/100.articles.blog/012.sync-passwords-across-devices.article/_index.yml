@@ -1,0 +1,39 @@
+seo:
+  title: 'Synchronize your passwords across all your devices'
+  description: 'Access your passwords seamlessly between your desktop, mobile, tablet or web browser.'
+date: 2021-08-18
+categories: ['Product']
+author: 'Herbert Poul'
+teaser: devices-unsplash.jpg
+title: 'Synchronize your passwords across all your devices'
+#mainImageOverride: './merge-confirmation.png'
+embed:
+  figures:
+    authPassWelcome:
+      title: 'AuthPass Welcome screen on first launch'
+      image: ./01-authpass-welcome-screen.png
+      resize: { width: 400, fillType: Fit }
+    selectSource:
+      title: 'Select "AuthPass Cloud" to get started'
+      image: ./02-authpass-select-source.png
+      resize: { width: 400, fillType: Fit }
+    cloudAuth:
+      title: 'Start authenticating with AuthPass Cloud'
+      image: ./03-authpass-cloud-auth.png
+      resize: { width: 400, fillType: Fit }
+    cloudSignUp:
+      title: 'Sign up / login to AuthPass Cloud'
+      image: ./04-authpass-cloud-sign-up.png
+      resize: { width: 400, fillType: Fit }
+    confirmEmail:
+      title: 'Confirm your email address and solve captcha'
+      image: ./05-authpass-confirm-email.png
+      resize: { width: 400, fillType: Fit }
+    fileList:
+      title: '(empty) list of files in AuthPass cloud'
+      image: ./06-authpass-list.png
+      resize: { width: 400, fillType: Fit }
+    choosePassword:
+      title: 'Create password database with new master password'
+      image: ./07-authpass-choose-password.png
+      resize: { width: 400, fillType: Fit }

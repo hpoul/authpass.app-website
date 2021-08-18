@@ -7,6 +7,11 @@ Your passwords and password database are still completely in your control,
 and nothing changes on the encryption. But it allows additional features
 to further protect your accounts and privacy.
 
+# Synchronize password databases between devices.
+
+See your [news article](/articles/sync-passwords-across-devices) for how to use AuthPass Cloud to
+synchronize your passwords across all your devices.
+
 # Unlimited, Anonymous Email Addresses
 
 With **AuthPass Cloud** you can auto generate anonymous email 
