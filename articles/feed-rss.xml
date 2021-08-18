@@ -17,6 +17,7 @@
         <rdf:li />
         <rdf:li />
         <rdf:li />
+        <rdf:li />
       </rdf:Seq>
     </items>
   </channel>
@@ -74,6 +75,11 @@
     <title>AuthPass 1.9.0 - Merging of kdbx file conflicts</title>
     <link>https://authpass.app/articles/authpass-1.9.0-merging-of-kdbx-file-conflicts/</link>
     <dc:date>2021-08-02T08:00:00Z</dc:date>
+  </item>
+  <item rdf:about="https://authpass.app/articles/synchronize-your-passwords-across-all-your-devices/">
+    <title>Synchronize your passwords across all your devices</title>
+    <link>https://authpass.app/articles/synchronize-your-passwords-across-all-your-devices/</link>
+    <dc:date>2021-08-18T08:00:00Z</dc:date>
   </item>
 </rdf:RDF>
 
