@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Install AuthPass on Linux | AuthPass.app Password Manager</title>
+    <meta content="Install AuthPass on Linux | AuthPass.app Password Manager" property="og:title">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://authpass.app/docs/install/linux-installation/">
+    <link rel="stylesheet" href="/styles/css/main.53230e7ff745e1c6979896020792c7b7f221619e045832dd9d45a30a332bb6ce.css" integrity="sha256-UyMOf/dF4caXmJYCB5LHt/IhYZ4EWDLdnUWjCjMrts4=">
+    <script type="text/javascript" src="/script/main.3d1df54f8d65ad0229956d791eda963f1de698024e93271eb1f879f88c855ac7.js" async="async" integrity="sha256-PR31T41lrQIplW15HtqWPx3mmAJOkycesfh5+IyFWsc="></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <meta name="description" content="Linux download and installation procedure.">
+    <meta content="Linux download and installation procedure." property="og:description">
+    <meta content="Linux download and installation procedure." property="twitter:description">
+    <meta content="https://authpass.app/docs/install/linux-installation/" property="og:url">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Install AuthPass on Linux","mainEntityOfPage":{"@type":"WebPage","@id":"https://authpass.app/docs/install/linux-installation/"},"image":"https://authpass.app/docs/install/linux-installation/authpass-platform-composition.png","wordcount":150,"url":"https://authpass.app/docs/install/linux-installation/","publisher":{"@type":"Organization","name":"AuthPass.app Password Manager","logo":{"@type":"ImageObject","url":"https://authpass.app/website-header.png"}},"author":{"@type":"Person","name":"Herbert Poul"},"description":"Linux download and installation procedure."}</script>
+    <meta content="https://authpass.app/docs/install/linux-installation/authpass-platform-composition.png" property="og:image">
+    <meta content="1353" property="og:image:width">
+    <meta content="840" property="og:image:height">
+    <meta content="https://authpass.app/docs/install/linux-installation/authpass-platform-composition.png" property="twitter:image">
+    <meta content="article" property="og:type">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91100035-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91100035-8');
+</script>
+  </head>
+  <body class="has-navbar-fixed-top has-spaced-navbar-fixed-top">
+    <nav class="main-navbar navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand"><a href="/" class="navbar-item"><picture><source srcset="/NoResize_2147483647x2147483647_webp_website-header.png.webp" type="image/webp"></source><img alt="AuthPass.app Password Manager" src="/NoResize_2147483647x2147483647_orig_website-header.png" width="711" height="108"></picture></a><a class="navbar-burger" role="button" data-target="main-menu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a></div>
+        <div class="navbar-menu" id="main-menu">
+          <div class="navbar-end"><a href="/" class="navbar-item" title="Home">Home</a><a href="/articles/" class="navbar-item" title="Blog">Blog</a><a href="/docs/" class="navbar-item is-active" title="Docs/Help">Docs/Help</a><a href="https://forum.authpass.app/" class="navbar-item" title="Forum">Forum</a></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <div class="hero is-medium has-bg-img">
+          <div class="bg-image" style="background-image: url('/docs/install/linux-installation/authpass-platform-composition.png')">x</div>
+          <div class="hero-body has-text-centered">
+            <h1 class="title">Install AuthPass on Linux</h1>
+            <h2 class="subtitle is-size-6 has-text-weight-bold">Linux Setup</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section">
+            <div class="columns">
+              <div class="column is-offset-2 is-8">
+                <div class="content has-drop-caps"><svg xmlns="http://www.w3.org/2000/svg" class="adm-hidden">
+<symbol id="adm-tip">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m12.3 10c2.8-.7 4.2-3.8 2.1-7.4 8.1 3.2 7.5 18.1-2.6 18.4-8.1.2-9.8-11.4-4.4-14.8.2 3.3 2.8 4.3 4.9 3.8zm-3.2 5.8c.2 1.6 2.5 1.9 3.6 1.5 2.8-1 2.5-4 2.1-5.1-.8 1.4-1.3 1.7-2.2 2s-3.7-.7-3.5 1.6z" fill="currentColor"/>
+</svg>
+</symbol>
+</svg>
+<h1 id="linux-installation"><a href="#linux-installation" class="md-anchor">Linux Installation</a></h1>
+<p>The way to install on linux very much depends on your platform. The
+preferred way is to use a package manager which will keep the app up to date.</p>
+<p>If you use AuthPass for Linux <a href="https://forum.authpass.app">please provide feedback</a>. Thanks!</p>
+<h2 id="snap-store"><a href="#snap-store" class="md-anchor">Snap Store</a></h2>
+<p>Especially for Ubuntu this might be the easiest way. Download from the Snap Store.</p>
+<center><a href="https://snapcraft.io/authpass" ><img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" /></a></center>
+<h2 id="flathub-flatpak-release"><a href="#flathub-flatpak-release" class="md-anchor">Flathub flatpak release</a></h2>
+<center><a href="https://flathub.org/apps/details/app.authpass.AuthPass"><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a></center>
+<h2 id="debian-apt-repository"><a href="#debian-apt-repository" class="md-anchor">Debian Apt repository</a></h2>
+<p>Debian package a distributed through an <a href="https://packagecloud.io/authpass/authpass">apt repository on package.io</a></p>
+<pre><code class="language-shell"># Add repository
+curl -s https://packagecloud.io/install/repositories/authpass/authpass/script.deb.sh | sudo bash
+# Install authpass
+sudo apt-get install authpass
+</code></pre>
+<p>For details or manual installation check the <a href="https://packagecloud.io/authpass/authpass/install#manual">documentation on packagecloud.io</a>.</p>
+<h2 id="manual-downloads"><a href="#manual-downloads" class="md-anchor">Manual Downloads</a></h2>
+<ul>
+<li>Download the latest <code>.tar.gz</code>: <a href="https://data.authpass.app/data/artifact.download/authpass-linux-stable.deb"><img src="https://data.authpass.app/data/artifact.download/authpass-linux-stable.deb/shield" alt="AuthPass-setup-stable.exe" /></a></li>
+<li>Mirror: <a href="https://www.fosshub.com/AuthPass.html">available on FossHub</a></li>
+<li><a href="https://github.com/authpass/authpass/releases">GitHub releases</a></li>
+</ul>
+<div class="adm-block adm-tip">
+<div class="adm-heading">
+<svg class="adm-icon"><use xlink:href="#adm-tip" /></svg><span>Keep up to date</span>
+</div>
+<div class="adm-body">
+<p>AuthPass is updated regularly. Please check regularly for updates.
+These provide regular updates, bugfixes and feature enhancements.</p>
+</div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section">
+            <div class="columns">
+              <div class="column is-offset-2 is-8 is-centered"><div id='discourse-comments'></div>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://forum.authpass.app/',
+                     discourseEmbedUrl: 'https:\/\/authpass.app\/docs\/install\/linux-installation\/' };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column"><span class="footer-title title is-4">Project</span>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/articles/">Blog &amp; News</a></li>
+              <li><a href="/docs/">Documentation &amp; Help</a></li>
+              <li><a href="/docs/newsletter/">Stay connected: Newsletter</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Social</span>
+            <ul>
+              <li><a href="https://forum.authpass.app/">Forum</a></li>
+              <li><a href="https://facebook.com/AuthPass">Facebook</a></li>
+              <li><a href="https://twitter.com/AuthPass">Twitter</a></li>
+              <li><a href="https://github.com/authpass/authpass">GitHub</a></li>
+              <li><a href="https://discord.gg/Nuraxmc">Discord Chat</a></li>
+            </ul>
+          </div>
+          <div class="column"><span class="footer-title title is-4">Legal</span>
+            <ul>
+              <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="/legal/terms-and-conditions/">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="github-fork-ribbon right-bottom fixed" href="https://github.com/authpass/authpass" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    </footer>
+  </body>
+</html>
