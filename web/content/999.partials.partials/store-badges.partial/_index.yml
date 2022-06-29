@@ -1,6 +1,6 @@
 embed:
   references:
-    linuxRelease: /articles/linux-release/
+    linuxRelease: /docs/install/linux-installation/
     windowsRelease: /docs/install/windows-installation/
   figures:
     macAppStore:

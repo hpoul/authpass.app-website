@@ -1,0 +1,15 @@
+seo:
+  title: 'Install AuthPass on Linux'
+  description: 'Linux download and installation procedure.'
+date: 2020-08-31
+categories: ['Documentation']
+author: 'Herbert Poul'
+teaser: authpass-platform-composition.png
+title: 'Install AuthPass on Linux'
+subTitle: 'Linux Setup'
+slug: linux-installation
+#embed:
+#  figures:
+#    fosshub:
+#      image: fosshub-download.svg
+#      inlineImage: true
